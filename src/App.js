@@ -1,8 +1,8 @@
 import React from "react";
-import Routes from "./Routes";
+import Paths from "./Paths";
 
 function App() {
-  return <Routes />;
+  return <Paths />;
 }
 
 export default App;
