@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../Containers/home";
 import AboutMe from "../Containers/aboutMe";
 import ContactMe from "../Containers/contactMe";
@@ -8,7 +8,7 @@ import MySkills from "../Containers/mySkills";
 
 function Paths() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/about" exact element={<AboutMe />}></Route>
@@ -16,7 +16,7 @@ function Paths() {
         <Route path="/projects" exact element={<MyProjects />} />
         <Route path="/skills" exact element={<MySkills />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
