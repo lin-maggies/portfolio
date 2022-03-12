@@ -17,11 +17,15 @@
 .navbar-burger {
   display: flex;
   color: purple;
+  margin: 0.5rem 1rem;
 }
 
-.brand-title {
+.navbar-burger a {
+  width: 100%;
+}
+.header-title {
   font-size: 1.5rem;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .navbar-links {
@@ -39,17 +43,14 @@
   }
   .navbar-links {
     display: flex;
+    font-size: 1rem;
   }
-  .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
+
   .navbar-links li {
     list-style: none;
   }
   .navbar-links li a {
-    padding: 1rem;
+    padding: 0.75rem;
     /* display: flex; */
   }
 }

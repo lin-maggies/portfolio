@@ -9,6 +9,7 @@ export default function ContactMe() {
   return (
     <div>
       <Navbar />
+      <h1>Contact me</h1>
       <p>blahhhhh</p>
     </div>
   );
