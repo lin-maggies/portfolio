@@ -31,31 +31,33 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Menu className="navbar-burger">
-          <MenuButton
-            as={IconButton}
-            aria-label="Options"
-            icon={<HamburgerIcon />}
-            variant="outline"
-          />
-          <MenuList>
-            <MenuItem>
-              <Link to="/">Home</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link to="/about">About Me</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link to="/projects">My Projects</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link to="/skills">My Skills</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link to="/contact">Contact Me</Link>
-            </MenuItem>
-          </MenuList>
-        </Menu>
+        <div className="navbar-burger">
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+            />
+            <MenuList>
+              <MenuItem>
+                <Link to="/">Home</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/about">About Me</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/projects">My Projects</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/skills">My Skills</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/contact">Contact Me</Link>
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </div>
       </nav>
     </div>
   );
