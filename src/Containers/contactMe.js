@@ -1,27 +1,12 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState } from "react";
 import { Text, Button, Box, Link } from "@chakra-ui/react";
-import { useNavigate } from "react-router";
 import "../App.css";
 import Navbar from "../Components/Navbar";
 
 export default function ContactMe() {
-  const navigate = useNavigate();
-
-  // const form = document.querySelector("form");
-
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-  const handleMessageChange = (event) => {
-    setMessage(event.target.value);
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -62,7 +47,7 @@ export default function ContactMe() {
             type="email"
             name="email"
             placeholder="Enter email"
-            onChange={handleEmailChange}
+            onChange={(e) => setEmail(e.target.value)}
             value={email}
             required
           />
@@ -71,7 +56,7 @@ export default function ContactMe() {
             type="text"
             name="name"
             placeholder="Enter name"
-            onChange={handleNameChange}
+            onChange={(e) => setName(e.target.value)}
             value={name}
             required
           />
@@ -80,7 +65,7 @@ export default function ContactMe() {
             type="text"
             name="message"
             placeholder="Enter message"
-            onChange={handleMessageChange}
+            onChange={(e) => setMessage(e.target.value)}
             value={message}
             required
           />
