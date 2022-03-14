@@ -32,11 +32,6 @@
   display: none;
 }
 
-/* .img-info h2 {
-  font-size: 16px;
-  line-height: 44px;
-} */
-
 @media only screen and (min-width: 768px) {
   .navbar-burger {
     display: none;

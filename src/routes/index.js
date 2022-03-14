@@ -6,7 +6,7 @@ import ContactMe from "../Containers/contactMe";
 import MyProjects from "../Containers/myProjects";
 import MySkills from "../Containers/mySkills";
 
-function Paths() {
+function RoutesWeb() {
   return (
     <Router>
       <Routes>
@@ -20,4 +20,4 @@ function Paths() {
   );
 }
 
-export default Paths;
+export default RoutesWeb;
