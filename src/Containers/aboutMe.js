@@ -9,8 +9,9 @@ export default function AboutMe() {
   return (
     <div>
       <Navbar />
-      <h1 className="pageTitle">About me</h1>
-      <p>blahhhhh</p>
+      <div className="body">
+        <h1 className="pageTitle">About Me</h1>
+      </div>
     </div>
   );
 }

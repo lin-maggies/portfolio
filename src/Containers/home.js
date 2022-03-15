@@ -8,9 +8,11 @@ import "../App.css";
 export default function Home() {
   const navigate = useNavigate();
   return (
-    <div className="body">
+    <div>
       <Navbar />
-      <h1 className="pageTitle">Home</h1>
+      <div className="body">
+        <h1 className="pageTitle">Home</h1>
+      </div>
     </div>
   );
 }
