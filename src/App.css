@@ -4,21 +4,14 @@
   padding: 0;
   font-family: sans-serif;
 }
-.body {
-  background-color: #faf6eb;
-}
-h1.pageTitle {
-  font-family: cartoon;
-  font-size: 5rem;
-  color: #fd8a09;
-}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #373634;
+  background-color: #faf6eb;
   width: 100%;
+  padding: 0 2.5rem;
 }
 
 .navbar-burger {
@@ -30,16 +23,27 @@ h1.pageTitle {
 .navbar-burger a {
   width: 100%;
 }
+
 .header-title {
   font-size: 1.5rem;
-  margin: 1rem;
   color: #ff6d00;
   font-weight: bold;
+  padding: 2rem 0;
 }
 
 .navbar-links {
   display: none;
-  color: #ffbe0b;
+  color: #ff6f52;
+}
+
+.body {
+  padding: 1rem 3rem;
+}
+
+.pageTitle {
+  font-family: cartoon;
+  font-size: 5rem;
+  color: #fd8a09;
 }
 
 .contact-form {

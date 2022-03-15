@@ -9,8 +9,9 @@ export default function MySkills() {
   return (
     <div>
       <Navbar />
-      <h1 className="pageTitle">My skills</h1>
-      <p>blahhhhh</p>
+      <div className="body">
+        <h1 className="pageTitle">My Skills</h1>
+      </div>
     </div>
   );
 }

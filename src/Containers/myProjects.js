@@ -9,8 +9,9 @@ export default function MyProjects() {
   return (
     <div>
       <Navbar />
-      <h1 className="pageTitle">My projects</h1>
-      <p>blahhhhh</p>
+      <div className="body">
+        <h1 className="pageTitle">My Projects</h1>
+      </div>
     </div>
   );
 }
