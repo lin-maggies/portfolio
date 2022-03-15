@@ -9,7 +9,7 @@ export default function MySkills() {
   return (
     <div>
       <Navbar />
-      <h1>My skills</h1>
+      <h1 className="pageTitle">My skills</h1>
       <p>blahhhhh</p>
     </div>
   );

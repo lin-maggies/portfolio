@@ -38,38 +38,35 @@ export default function ContactMe() {
   return (
     <div>
       <Navbar />
-      <h1>Contact me</h1>
-      <p>blahhhhh</p>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email address</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            required
-          />
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter name"
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-            required
-          />
-          <label>Message</label>
-          <input
-            type="text"
-            name="message"
-            placeholder="Enter message"
-            onChange={(e) => setMessage(e.target.value)}
-            value={message}
-            required
-          />
-        </div>
+      <h1 className="pageTitle">Contact me</h1>
+      <form onSubmit={handleSubmit} className="contact-form">
+        <label>Email address</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+          required
+        />
+        <label>Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter name"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+          required
+        />
+        <label>Message</label>
+        <input
+          type="text"
+          name="message"
+          placeholder="Enter message"
+          onChange={(e) => setMessage(e.target.value)}
+          value={message}
+          required
+        />
         <button type="submit">Submit</button>
       </form>
     </div>

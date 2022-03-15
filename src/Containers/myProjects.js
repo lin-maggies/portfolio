@@ -9,7 +9,7 @@ export default function MyProjects() {
   return (
     <div>
       <Navbar />
-      <h1>My projects</h1>
+      <h1 className="pageTitle">My projects</h1>
       <p>blahhhhh</p>
     </div>
   );
