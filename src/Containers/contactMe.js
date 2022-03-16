@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { Text, Button, Box, Link } from "@chakra-ui/react";
-import "../App.css";
-import Navbar from "../Components/Navbar";
+import React, { useState } from 'react';
+import { Text, Button, Box, Link } from '@chakra-ui/react';
+import '../App.css';
+import Navbar from '../Components/Navbar';
 
 export default function ContactMe() {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const endpoint =
-      "https://1gmprjswn1.execute-api.ap-southeast-2.amazonaws.com/default/sendContactEmail";
+      'https://1gmprjswn1.execute-api.ap-southeast-2.amazonaws.com/default/sendContactEmail';
 
     const body = JSON.stringify({
       senderName: name,
@@ -21,7 +21,7 @@ export default function ContactMe() {
     });
 
     const requestOptions = {
-      method: "POST",
+      method: 'POST',
       body,
     };
 
@@ -39,7 +39,7 @@ export default function ContactMe() {
     <div>
       <Navbar />
       <div className="body">
-        <h1 className="pageTitle">Contact me</h1>
+        <h1 className="pageTitle">Send me a message</h1>
         <form onSubmit={handleSubmit} className="contact-form">
           <label>Email address</label>
           <input
@@ -70,6 +70,10 @@ export default function ContactMe() {
           />
           <button type="submit">Submit</button>
         </form>
+        <p1>
+          Or send me an email at {''}
+          <a href="mailto:lin.maggies@gmail.com">lin.maggies@gmail.com</a>
+        </p1>
       </div>
     </div>
   );

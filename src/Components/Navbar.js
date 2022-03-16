@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from 'react';
 import {
   Text,
   Button,
@@ -8,26 +8,27 @@ import {
   MenuList,
   MenuItem,
   IconButton,
-} from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router";
-import { Link } from "react-router-dom";
-import "../App.css";
+} from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
+import '../App.css';
 
 export default function Navbar() {
   const navigate = useNavigate();
   return (
     <div>
       <nav className="navbar">
-        <div className="header-title">Maggie Lin's Portfolio</div>
+        <Link className="header-title" to="/">
+          Maggie Lin
+        </Link>
         <div className="navbar-links">
           <ul>
             <li>
-              <Link to="/">Home</Link>
-              <Link to="/about">About Me</Link>
-              <Link to="/projects">My Projects</Link>
-              <Link to="/skills">My Skills</Link>
-              <Link to="/contact">Contact Me</Link>
+              <Link to="/about">About</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/skills">Skills</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -44,16 +45,16 @@ export default function Navbar() {
                 <Link to="/">Home</Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/about">About Me</Link>
+                <Link to="/about">About</Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/projects">My Projects</Link>
+                <Link to="/projects">Projects</Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/skills">My Skills</Link>
+                <Link to="/skills">Skills</Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/contact">Contact Me</Link>
+                <Link to="/contact">Contact</Link>
               </MenuItem>
             </MenuList>
           </Menu>
