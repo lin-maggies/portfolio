@@ -35,7 +35,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form onSubmit={handleSubmit} className="contactForm">
         <label>Email address</label>
         <input
           type="email"

@@ -15,15 +15,14 @@ export default function MySkills() {
   return (
     <div>
       <Navbar />
-      <div className="body">
-        <h1 className="pageTitle">What I can do</h1>
+      <div className="sectionColorContainer">
+        <h1 className="sectionTitle">What I can do</h1>
         <div className="logoContainer">
           <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
           <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
           <img src={cssLogo} alt="CSS logo" className="skillLogo" />
           <img src={awsLogo} alt="AWS logo" className="skillLogo" />
           <img src={gitLogo} alt="Git logo" className="skillLogo" />
-
           <img src={reactLogo} alt="React logo" className="skillLogo" />
         </div>
       </div>

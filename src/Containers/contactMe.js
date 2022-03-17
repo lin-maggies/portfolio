@@ -8,7 +8,7 @@ export default function ContactMe() {
     <div>
       <Navbar />
       <div className="body">
-        <h1 className="pageTitle">Send me a message</h1>
+        <h1 className="sectionTitle">Send me a message</h1>
         <ContactForm />
         <p1>
           Or send me an email at {""}
