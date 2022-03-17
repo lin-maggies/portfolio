@@ -15,14 +15,26 @@
   /* border-bottom: 2px solid #f7e05f; */
 }
 
-.navbar-burger {
+.navbarBurger {
   display: flex;
   color: black;
   margin: 0.5rem 1rem;
 }
 
-.navbar-burger a {
+.navbarBurger a {
   width: 100%;
+}
+
+.navbarLinks {
+  display: none;
+  color: black;
+}
+
+.navbarLinks a:hover,
+a:active {
+  color: #1a27c9;
+  text-decoration: underline;
+  /* font-weight: bold; */
 }
 
 .logo {
@@ -33,32 +45,24 @@
   font-family: cartoon;
 }
 
-.header-title {
+/* .header-title {
   font-size: 1.2rem;
   color: black;
   font-weight: bold;
   padding: 2rem 0;
   line-height: 0;
-}
+} */
 
-.navbar-links {
-  display: none;
-  color: black;
-}
-
-.navbar-links a:hover,
-a:active {
-  color: #1a27c9;
-  text-decoration: underline;
-  /* font-weight: bold; */
-}
-
-.section {
+.sectionColorContainer {
   background-color: #f7e05f;
   width: 100%;
 }
 
-.pageTitle {
+.sectionContainer {
+  width: 100%;
+}
+
+.sectionTitle {
   margin: 3rem 0 0;
   font-family: cartoon;
   font-size: 4rem;
@@ -66,16 +70,16 @@ a:active {
   padding: 1rem;
 }
 
-.pagePara {
+.sectionPara {
   margin: 2rem 0;
 }
 
-.contact-form {
+.contactForm {
   display: flex;
   flex-direction: column;
 }
 
-.contact-form button {
+.contactForm button {
   background-color: #1a27c9;
   color: white;
 }
@@ -100,25 +104,25 @@ p1 {
 }
 
 @media only screen and (min-width: 768px) {
-  .navbar-burger {
+  .navbarBurger {
     display: none;
   }
-  .navbar-links {
+  .navbarLinks {
     display: flex;
     font-size: 1rem;
   }
 
-  .navbar-links li {
+  .navbarLinks li {
     list-style: none;
   }
-  .navbar-links li a {
+  .navbarLinks li a {
     padding: 0.75rem;
     /* display: flex; */
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  .navbar-links li Link {
+  .navbarLinks li Link {
     padding: 1rem;
   }
 }

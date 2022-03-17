@@ -12,24 +12,24 @@ export default function Home() {
     <div>
       <Navbar />
       <div>
-        <div className="section">
-          <h1 className="pageTitle">Hi, I'm Maggie Lin.</h1>
-          <div className="pagePara">
+        <div className="sectionColorContainer">
+          <h1 className="sectionTitle">Hi, I'm Maggie Lin.</h1>
+          <div className="sectionPara">
             <p1>I'm a web developer.</p1>
           </div>
         </div>
-        <h1 className="pageTitle">My projects</h1>
-        <div className="pagePara">
+        <h1 className="sectionTitle">My projects</h1>
+        <div className="sectionPara">
           <Link to="/projects">Click here to see more</Link>
         </div>
-        <div className="section">
-          <h1 className="pageTitle">My skills</h1>
-          <div className="pagePara">
+        <div className="sectionColorContainer">
+          <h1 className="sectionTitle">My skills</h1>
+          <div className="sectionPara">
             <Link to="/skills">Click here to see more</Link>
           </div>
         </div>
 
-        <h1 className="pageTitle">Contact me</h1>
+        <h1 className="sectionTitle">Contact me</h1>
         <ContactForm />
       </div>
     </div>

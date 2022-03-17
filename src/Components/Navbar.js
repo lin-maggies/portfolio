@@ -22,7 +22,7 @@ export default function Navbar() {
         <Link className="logo" to="/">
           ML
         </Link>
-        <div className="navbar-links">
+        <div className="navbarLinks">
           <ul>
             <li>
               <Link to="/about">About</Link>
@@ -32,7 +32,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-burger">
+        <div className="navbarBurger">
           <Menu>
             <MenuButton
               as={IconButton}
