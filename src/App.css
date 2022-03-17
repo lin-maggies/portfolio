@@ -103,6 +103,10 @@ p1 {
   width: 5rem;
 }
 
+.photo {
+  width: 28rem;
+}
+
 @media only screen and (min-width: 768px) {
   .navbarBurger {
     display: none;
