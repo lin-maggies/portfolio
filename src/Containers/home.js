@@ -18,19 +18,23 @@ export default function Home() {
             <p1>I'm a web developer.</p1>
           </div>
         </div>
-        <h1 className="sectionTitle">My projects</h1>
-        <div className="sectionPara">
-          <Link to="/projects">Click here to see more</Link>
+        <div className="sectionContainer">
+          <h1 className="sectionTitle">My projects</h1>
+          <div className="sectionPara">
+            <Link to="/projects">Click here to see more</Link>
+          </div>
         </div>
+
         <div className="sectionColorContainer">
           <h1 className="sectionTitle">My skills</h1>
           <div className="sectionPara">
             <Link to="/skills">Click here to see more</Link>
           </div>
         </div>
-
-        <h1 className="sectionTitle">Contact me</h1>
-        <ContactForm />
+        <div className="sectionContainer">
+          <h1 className="sectionTitle">Contact me</h1>
+          <ContactForm />
+        </div>
       </div>
     </div>
   );

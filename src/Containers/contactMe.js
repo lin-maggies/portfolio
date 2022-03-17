@@ -7,7 +7,7 @@ export default function ContactMe() {
   return (
     <div>
       <Navbar />
-      <div className="body">
+      <div className="sectionColorContainer">
         <h1 className="sectionTitle">Send me a message</h1>
         <ContactForm />
         <p1>
