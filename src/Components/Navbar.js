@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext } from "react";
 import {
   Text,
   Button,
@@ -8,19 +8,19 @@ import {
   MenuList,
   MenuItem,
   IconButton,
-} from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { useNavigate } from 'react-router';
-import { Link } from 'react-router-dom';
-import '../App.css';
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 export default function Navbar() {
   const navigate = useNavigate();
   return (
     <div>
       <nav className="navbar">
-        <Link className="header-title" to="/">
-          Maggie Lin
+        <Link className="logo" to="/">
+          ML
         </Link>
         <div className="navbar-links">
           <ul>
@@ -41,9 +41,6 @@ export default function Navbar() {
               variant="outline"
             />
             <MenuList>
-              <MenuItem>
-                <Link to="/">Home</Link>
-              </MenuItem>
               <MenuItem>
                 <Link to="/about">About</Link>
               </MenuItem>
