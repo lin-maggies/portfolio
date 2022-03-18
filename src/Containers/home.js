@@ -4,6 +4,12 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
+import awsLogo from "../assets/images/aws.svg";
+import cssLogo from "../assets/images/css.svg";
+import gitLogo from "../assets/images/git.svg";
+import htmlLogo from "../assets/images/html.svg";
+import jsLogo from "../assets/images/javascript.svg";
+import reactLogo from "../assets/images/react.svg";
 import "../App.css";
 
 export default function Home() {
@@ -27,6 +33,14 @@ export default function Home() {
 
         <div className="sectionColorContainer">
           <h1 className="sectionTitle">My skills</h1>
+          <div className="logoContainer">
+            <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
+            <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
+            <img src={cssLogo} alt="CSS logo" className="skillLogo" />
+            <img src={awsLogo} alt="AWS logo" className="skillLogo" />
+            <img src={gitLogo} alt="Git logo" className="skillLogo" />
+            <img src={reactLogo} alt="React logo" className="skillLogo" />
+          </div>
           <div className="sectionPara">
             <Link to="/skills">Click here to see more</Link>
           </div>

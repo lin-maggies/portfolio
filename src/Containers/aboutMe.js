@@ -43,6 +43,20 @@ export default function AboutMe() {
           very big part of deciding what the end product looks like. Also
           getting the full experience of what it's like to have a live product.
         </p>
+        <p>
+          While working for Beer Jerk, I've met some other amazing people, where
+          I got the opportunity to join their startup, This Local Piggy.
+          Although I've only been in the company for a very brief time, being in
+          a new team just brings new perspectives of how other dev teams could
+          function. I got to be part of learning more of being conscious of
+          scalability, proof of concept, exit strategies, etc.
+        </p>
+        <p>
+          And in January 2022, I decided to quit my other full time job that’s
+          in the logistic industry, and to fully devote my time and energy in
+          web development. As I can really see myself growing this career, and
+          really enjoying the journey.
+        </p>
       </div>
       <div className="sectionContainer">
         <h1 className="sectionTitle">!Coding journey</h1>
