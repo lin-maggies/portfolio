@@ -10,6 +10,7 @@ import gitLogo from "../assets/images/git.svg";
 import htmlLogo from "../assets/images/html.svg";
 import jsLogo from "../assets/images/javascript.svg";
 import reactLogo from "../assets/images/react.svg";
+import selfie from "../assets/images/selfie.jpg";
 import "../App.css";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           <h1 className="sectionTitle">Hi, I'm Maggie Lin.</h1>
           <div className="sectionPara">
             <p1>I'm a web developer.</p1>
+            <img src={selfie} alt="Photo of maggie" className="photo" />
           </div>
         </div>
         <div className="sectionContainer">
