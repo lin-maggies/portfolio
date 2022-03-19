@@ -68,13 +68,12 @@ export default function MyProjects() {
           <p>Tools: React, Typescript</p>
           <p>Feb 2022 - Mar 2022</p>
           <p>
-            I only participated in this project for a brief time, but learnt
-            alot about testing api with Postman and writing code to incorporate
-            token-based authentiaction. We were integrating a shopping cart to
-            an existing Webflow grocery shop. I was building the part where,
-            with a hard coded product and customer detail already in the code,
-            to have the ability to populate the cart and proceed to checkout
-            using Foxycart's APIs.
+            Learnt alot about testing api with Postman and writing code to
+            incorporate token-based authentiaction. We were integrating a
+            shopping cart to an existing Webflow grocery shop. I was building
+            the part where, with a hard coded product and customer detail
+            already in the code, to have the ability to populate the cart and
+            proceed to checkout using Foxycart's APIs.
           </p>
         </div>
       </div>
