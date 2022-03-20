@@ -13,6 +13,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import "../App.css";
+import { headerLogo, headerLogoHover } from "../assets/images";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -20,7 +21,12 @@ export default function Navbar() {
     <div>
       <nav className="navbar">
         <Link className="logo" to="/">
-          ML
+          <img
+            src={headerLogo}
+            className="navLogo"
+            onMouseOver={(e) => (e.currentTarget.src = headerLogoHover)}
+            onMouseOut={(e) => (e.currentTarget.src = headerLogo)}
+          />
         </Link>
         <div className="navbarLinks">
           <ul>

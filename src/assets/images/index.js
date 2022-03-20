@@ -18,6 +18,8 @@ import htmlLogo from "./html.svg";
 import jsLogo from "./javascript.svg";
 import reactLogo from "./react.svg";
 import selfie from "./selfie.jpg";
+import headerLogo from "./headerLogo.svg";
+import headerLogoHover from "./headerLogoHover.svg";
 
 export {
   brew1,
@@ -40,4 +42,6 @@ export {
   jsLogo,
   reactLogo,
   selfie,
+  headerLogo,
+  headerLogoHover,
 };
