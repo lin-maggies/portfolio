@@ -35,17 +35,19 @@ export default function ProjectModal(props) {
 
   return (
     <div>
-      <Button onClick={openAndReset}>Click to see images of website</Button>
+      <Button onClick={openAndReset}>
+        Click to see more images of website
+      </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent maxW="1000px">
           <ModalHeader>{props.title}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <img
               src={props.images[imagePage]}
               alt="project screenshots"
-              className="photo"
+              className="projPhoto"
             />
           </ModalBody>
 
