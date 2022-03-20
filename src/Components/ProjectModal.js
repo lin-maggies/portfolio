@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState } from "react";
 import {
   Modal,
   ModalOverlay,
@@ -10,8 +10,8 @@ import {
   useDisclosure,
   Flex,
 } from "@chakra-ui/react";
-import Button from "../Components/pageElements/Button.js";
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
+import Button from "../Components/pageElements/Button.js";
 
 export default function ProjectModal(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
