@@ -73,7 +73,9 @@ export default function AboutMe() {
             front of a computer coding, there is 90% chance you'll be able to
             find me either at a climbing gym or at a crag somewhere.
           </p>
-          <p>Below is a photo of me trying really hard to hug a rock wall.</p>
+          <p>
+            On the right is a photo of me trying really hard to hug a rock wall.
+          </p>
         </div>
         <div className="column">
           <img
