@@ -10,7 +10,7 @@ export default function ContactMe() {
       <div className="sectionColorContainer">
         <h1 className="sectionTitle">Send me a message</h1>
         <ContactForm />
-        <p>
+        <p className="sectionPara">
           Or send me an email at {""}
           <a href="mailto:lin.maggies@gmail.com">lin.maggies@gmail.com</a>
         </p>

@@ -36,7 +36,12 @@ export default function ProjectModal(props) {
 
   return (
     <div>
-      <Button onClick={openAndReset} children={props.children} />
+      <Button
+        onClick={openAndReset}
+        children={props.children}
+        border={props.border}
+        borderColor={props.borderColor}
+      />
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

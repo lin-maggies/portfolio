@@ -17,17 +17,12 @@ a:active {
   align-items: center;
   background-color: #ffffffe6;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 5%;
+  height: 6rem;
 }
 
 .navLogo {
   height: 3rem;
-}
-
-.navbarBurger {
-  display: flex;
-  color: black;
-  margin: 0.5rem 1rem;
 }
 
 .navbarBurger a {
@@ -36,46 +31,50 @@ a:active {
 
 .navbarLinks {
   display: none;
-  color: black;
-}
-
-.logo {
-  font-size: 2rem;
-  color: black;
-  font-weight: bold;
-  padding: 2rem 0;
-  font-family: cartoon;
 }
 
 .sectionColorContainer {
   background-color: #f7e05f;
   width: 100%;
+  padding: 5% 5% 10%;
 }
 
 .sectionContainer {
+  background-color: #ffffffe6;
   width: 100%;
+  padding: 5% 5% 10%;
 }
 
 .sectionTitle {
-  margin: 3rem 0 0;
   font-family: cartoon;
   font-size: 4rem;
   color: black;
-  padding: 1rem;
+  line-height: 1;
+  padding: 2rem 0 1rem;
 }
 
 .sectionPara {
-  margin: 2rem 0;
+  margin: 1rem 0 2rem;
+}
+
+.contactFormContainer {
+  border: 1px solid #1a27c9;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #f7e05f;
 }
 
 .contactForm {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  gap: 0.75rem;
 }
 
-.contactForm button {
-  background-color: #1a27c9;
-  color: white;
+.contactForm input {
+  background-color: #ffffffe6;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
 }
 
 .flexContainer {
@@ -123,6 +122,19 @@ a:active {
   }
   .navbarLinks li a {
     padding: 0.75rem;
+  }
+
+  .sectionTitle {
+    line-height: 1.5;
+  }
+
+  .contactFormContainer {
+    width: 50%;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
   }
 
   .column {
