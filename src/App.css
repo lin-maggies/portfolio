@@ -5,6 +5,12 @@
   font-family: sans-serif;
 }
 
+a:hover,
+a:active {
+  color: #1a27c9;
+  text-decoration: underline;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -12,6 +18,10 @@
   background-color: #ffffffe6;
   width: 100%;
   padding: 0 2rem;
+}
+
+.navLogo {
+  height: 3rem;
 }
 
 .navbarBurger {
@@ -35,11 +45,6 @@
   font-weight: bold;
   padding: 2rem 0;
   font-family: cartoon;
-}
-
-.logo a:hover,
-a:active {
-  color: #1a27c9;
 }
 
 .sectionColorContainer {
@@ -120,12 +125,6 @@ a:active {
     padding: 0.75rem;
   }
 
-  .navbarLinks a:hover,
-  a:active {
-    color: #1a27c9;
-    text-decoration: underline;
-    /* font-weight: bold; */
-  }
   .column {
     float: left;
     width: 50%;
