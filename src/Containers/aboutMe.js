@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Text, Button, Box, Link } from "@chakra-ui/react";
+import React, { useEffect } from "react";
 import "../App.css";
 import Navbar from "../Components/Navbar";
 import teamPhotoBrew from "../assets/images/teamPhotoBrew.png";

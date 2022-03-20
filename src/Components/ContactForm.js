@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, Button, Box, Link } from "@chakra-ui/react";
+import Button from "../Components/pageElements/Button.js";
 
 export default function ContactForm() {
   const [email, setEmail] = useState("");
@@ -34,13 +34,13 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
+    <div className="contactFormContainer">
       <form onSubmit={handleSubmit} className="contactForm">
         <label>Email address</label>
         <input
           type="email"
           name="email"
-          placeholder="Enter email"
+          placeholder="John.doe@gmail.com"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
           required
@@ -49,7 +49,7 @@ export default function ContactForm() {
         <input
           type="text"
           name="name"
-          placeholder="Enter name"
+          placeholder="John Doe"
           onChange={(e) => setName(e.target.value)}
           value={name}
           required
@@ -58,12 +58,15 @@ export default function ContactForm() {
         <input
           type="text"
           name="message"
-          placeholder="Enter message"
+          placeholder="Today's weather is great"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
           required
         />
-        <button type="submit">Submit</button>
+
+        <button type="submit">
+          <Button children="Submit" border="1px" borderColor="#1a27c9" />
+        </button>
       </form>
     </div>
   );

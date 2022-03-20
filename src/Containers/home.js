@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
-
+import Button from "../Components/pageElements/Button.js";
 import "../App.css";
 import {
   text1,
@@ -52,7 +52,13 @@ export default function Home() {
           </div>
 
           <div className="sectionPara">
-            <Link to="/projects">Click here to see more</Link>
+            <Link to="/projects">
+              <Button
+                children="Click here to see more"
+                border="1px"
+                borderColor="#1a27c9"
+              />
+            </Link>
           </div>
         </div>
 
@@ -69,7 +75,13 @@ export default function Home() {
             <img src={reactLogo} alt="React logo" className="skillLogo" />
           </div>
           <div className="sectionPara">
-            <Link to="/skills">Click here to see more</Link>
+            <Link to="/skills">
+              <Button
+                children="Click here to see more"
+                border="1px"
+                borderColor="#1a27c9"
+              />
+            </Link>
           </div>
         </div>
         <div className="sectionContainer">

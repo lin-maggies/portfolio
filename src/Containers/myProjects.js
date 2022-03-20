@@ -68,6 +68,8 @@ export default function MyProjects() {
             images={textImageArray}
             title="Beer Jerk/TextBeer"
             children="Click to see more images of website"
+            border="1px"
+            borderColor="#1a27c9"
           />
         </div>
       </div>
@@ -100,6 +102,8 @@ export default function MyProjects() {
             images={brewImageArray}
             title="Brewenstein"
             children="Click to see more images of website"
+            border="1px"
+            borderColor="#1a27c9"
           />
         </div>
       </div>

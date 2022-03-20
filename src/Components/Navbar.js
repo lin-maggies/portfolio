@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import {
-  Text,
-  Button,
-  Box,
   Menu,
   MenuButton,
   MenuList,
@@ -20,7 +17,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="navbar">
-        <Link className="logo" to="/">
+        <Link to="/">
           <img
             src={headerLogo}
             className="navLogo"
@@ -45,6 +42,11 @@ export default function Navbar() {
               aria-label="Options"
               icon={<HamburgerIcon />}
               variant="outline"
+              _focus={{ color: "none" }}
+              _hover={{ color: "#1a27c9" }}
+              _active={{ color: "none" }}
+              color="#1a27c9"
+              borderColor="#1a27c9"
             />
             <MenuList>
               <MenuItem>
