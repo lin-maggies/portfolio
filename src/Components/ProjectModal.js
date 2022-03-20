@@ -8,8 +8,9 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  Button,
+  Flex,
 } from "@chakra-ui/react";
+import Button from "../Components/pageElements/Button.js";
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
 
 export default function ProjectModal(props) {
@@ -35,28 +36,37 @@ export default function ProjectModal(props) {
 
   return (
     <div>
-      <Button onClick={openAndReset}>
-        Click to see more images of website
-      </Button>
+      <Button
+        onClick={openAndReset}
+        children={"Click to see more images of website"}
+      />
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent maxW="1000px">
           <ModalHeader>{props.title}</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <img
-              src={props.images[imagePage]}
-              alt="project screenshots"
-              className="projPhoto"
-            />
+          <ModalCloseButton
+            _focus={{ color: "none" }}
+            _hover={{ color: "#1a27c9" }}
+            _active={{ color: "none" }}
+          />
+          <ModalBody justifyContent="center">
+            <Flex align="center" justify="center">
+              <img
+                src={props.images[imagePage]}
+                alt="project screenshots"
+                className="projPhoto"
+              />
+            </Flex>
           </ModalBody>
 
           <ModalFooter>
-            <Button variant="ghost" mr={3} onClick={back}>
-              <ArrowLeftIcon />
+            <Button mr={3} onClick={back}>
+              {imagePage === 0 ? null : <ArrowLeftIcon />}
             </Button>
-            <Button variant="ghost" onClick={next}>
-              <ArrowRightIcon />
+            <Button onClick={next}>
+              {imagePage === props.images.length - 1 ? null : (
+                <ArrowRightIcon />
+              )}
             </Button>
           </ModalFooter>
         </ModalContent>
