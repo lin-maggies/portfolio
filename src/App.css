@@ -12,7 +12,6 @@
   background-color: #ffffffe6;
   width: 100%;
   padding: 0 2rem;
-  /* border-bottom: 2px solid #f7e05f; */
 }
 
 .navbarBurger {
@@ -81,11 +80,10 @@ a:active {
   color: white;
 }
 
-.logoContainer {
+.flexContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  /* align-items: flex-start; */
   column-gap: 20px;
   row-gap: 10px;
   margin: 0 2rem;
@@ -97,7 +95,7 @@ a:active {
 }
 
 .photo {
-  width: 28rem;
+  width: 25rem;
 }
 
 .projPhoto {

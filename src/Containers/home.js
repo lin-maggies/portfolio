@@ -39,15 +39,17 @@ export default function Home() {
           <Link className="sectionTitle" to="/projects">
             My projects
           </Link>
-          <Link className="sectionTitle" to="/projects">
-            <img src={text1} alt="Photo of maggie" className="photo" />
-          </Link>
-          <Link className="sectionTitle" to="/projects">
-            <img src={brew1} alt="Photo of maggie" className="photo" />
-          </Link>
-          <Link className="sectionTitle" to="/projects">
-            <img src={brew1} alt="Photo of maggie" className="photo" />
-          </Link>
+          <div className="flexContainer">
+            <Link className="sectionTitle" to="/projects">
+              <img src={text1} alt="Photo of maggie" className="photo" />
+            </Link>
+            <Link className="sectionTitle" to="/projects">
+              <img src={brew1} alt="Photo of maggie" className="photo" />
+            </Link>
+            <Link className="sectionTitle" to="/projects">
+              <img src={brew1} alt="Photo of maggie" className="photo" />
+            </Link>
+          </div>
 
           <div className="sectionPara">
             <Link to="/projects">Click here to see more</Link>
@@ -58,7 +60,7 @@ export default function Home() {
           <Link className="sectionTitle" to="/skills">
             My Skills
           </Link>
-          <div className="logoContainer">
+          <div className="flexContainer">
             <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
             <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
             <img src={cssLogo} alt="CSS logo" className="skillLogo" />

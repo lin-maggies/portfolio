@@ -40,7 +40,7 @@ export default function MySkills() {
           </p>
         </div>
         <div className="column">
-          <div className="logoContainer">
+          <div className="flexContainer">
             <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
             <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
             <img src={cssLogo} alt="CSS logo" className="skillLogo" />
