@@ -3,11 +3,35 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import "../App.css";
 import Navbar from "../Components/Navbar";
 import ProjectModal from "../Components/ProjectModal";
-import brew1 from "../assets/images/brew1.png";
-import brew2 from "../assets/images/brew2.png";
+import {
+  brew1,
+  brew2,
+  brew3,
+  brew4,
+  brew5,
+  brew6,
+  brew7,
+  brew8,
+  text1,
+  text2,
+  text3,
+  text4,
+  text5,
+  text6,
+} from "../assets/images";
 
 export default function MyProjects() {
-  const beerImageArray = [brew1, brew2];
+  const brewImageArray = [
+    brew1,
+    brew2,
+    brew3,
+    brew4,
+    brew5,
+    brew6,
+    brew7,
+    brew8,
+  ];
+  const textImageArray = [text1, text2, text3, text4, text5, text6];
   return (
     <div>
       <Navbar />
@@ -27,11 +51,7 @@ export default function MyProjects() {
             {""}
             <ExternalLinkIcon />
           </a>
-          <ProjectModal
-            images={beerImageArray}
-            title="Beer Jerk/TextBeer"
-            number="2"
-          />
+          <ProjectModal images={textImageArray} title="Beer Jerk/TextBeer" />
         </div>
       </div>
       <div className="sectionContainer">
@@ -48,6 +68,7 @@ export default function MyProjects() {
             live on the internet, and being used to collect valuable data for
             the company.
           </p>
+          <ProjectModal images={brewImageArray} title="Brewenstein" />
         </div>
       </div>
       <div className="sectionColorContainer">

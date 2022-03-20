@@ -107,6 +107,11 @@ p1 {
   width: 28rem;
 }
 
+.projPhoto {
+  max-width: 50rem;
+  max-height: 55rem;
+}
+
 @media only screen and (min-width: 768px) {
   .navbarBurger {
     display: none;
