@@ -26,10 +26,18 @@ export default function Navbar() {
         <div className="navbarLinks">
           <ul>
             <li>
-              <Link to="/about">About</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/skills">Skills</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/about" title="About">
+                About
+              </Link>
+              <Link to="/projects" title="Projects">
+                Projects
+              </Link>
+              <Link to="/skills" title="Skills">
+                Skills
+              </Link>
+              <Link to="/contact" title="Contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
