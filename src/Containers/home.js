@@ -27,6 +27,7 @@ export default function Home() {
         <div className="sectionColorContainer row">
           <div className="column">
             <h1 className="sectionTitle">Hi, I'm Maggie Lin.</h1>
+            <h1 className="sectionTitle">ML</h1>
             <div className="sectionPara">
               <p1>I'm a web developer.</p1>
             </div>
