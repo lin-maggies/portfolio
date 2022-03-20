@@ -39,19 +39,16 @@ a:active {
 
 .logo {
   font-size: 2rem;
-  color: #1a27c9;
+  color: black;
   font-weight: bold;
   padding: 2rem 0;
   font-family: cartoon;
 }
 
-/* .header-title {
-  font-size: 1.2rem;
-  color: black;
-  font-weight: bold;
-  padding: 2rem 0;
-  line-height: 0;
-} */
+.logo a:hover,
+a:active {
+  color: #1a27c9;
+}
 
 .sectionColorContainer {
   background-color: #f7e05f;
@@ -83,10 +80,6 @@ a:active {
   background-color: #1a27c9;
   color: white;
 }
-/* 
-p1 {
-  font-size: 200%;
-} */
 
 .logoContainer {
   display: flex;
@@ -112,6 +105,14 @@ p1 {
   max-height: 55rem;
 }
 
+.column {
+  width: 100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media only screen and (min-width: 768px) {
   .navbarBurger {
     display: none;
@@ -126,7 +127,11 @@ p1 {
   }
   .navbarLinks li a {
     padding: 0.75rem;
-    /* display: flex; */
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
   }
 }
 

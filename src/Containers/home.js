@@ -2,36 +2,62 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
-import awsLogo from "../assets/images/aws.svg";
-import cssLogo from "../assets/images/css.svg";
-import gitLogo from "../assets/images/git.svg";
-import htmlLogo from "../assets/images/html.svg";
-import jsLogo from "../assets/images/javascript.svg";
-import reactLogo from "../assets/images/react.svg";
-import selfie from "../assets/images/selfie.jpg";
+
 import "../App.css";
+import {
+  text1,
+  brew1,
+  awsLogo,
+  cssLogo,
+  gitLogo,
+  htmlLogo,
+  jsLogo,
+  reactLogo,
+  selfie,
+} from "../assets/images";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Navbar />
       <div>
-        <div className="sectionColorContainer">
-          <h1 className="sectionTitle">Hi, I'm Maggie Lin.</h1>
-          <div className="sectionPara">
-            <p1>I'm a web developer.</p1>
+        <div className="sectionColorContainer row">
+          <div className="column">
+            <h1 className="sectionTitle">Hi, I'm Maggie Lin.</h1>
+            <div className="sectionPara">
+              <p1>I'm a web developer.</p1>
+            </div>
+          </div>
+          <div className="column">
             <img src={selfie} alt="Photo of maggie" className="photo" />
           </div>
         </div>
         <div className="sectionContainer">
-          <h1 className="sectionTitle">My projects</h1>
+          <Link className="sectionTitle" to="/projects">
+            My projects
+          </Link>
+          <Link className="sectionTitle" to="/projects">
+            <img src={text1} alt="Photo of maggie" className="photo" />
+          </Link>
+          <Link className="sectionTitle" to="/projects">
+            <img src={brew1} alt="Photo of maggie" className="photo" />
+          </Link>
+          <Link className="sectionTitle" to="/projects">
+            <img src={brew1} alt="Photo of maggie" className="photo" />
+          </Link>
+
           <div className="sectionPara">
             <Link to="/projects">Click here to see more</Link>
           </div>
         </div>
 
         <div className="sectionColorContainer">
-          <h1 className="sectionTitle">My skills</h1>
+          <Link className="sectionTitle" to="/skills">
+            My Skills
+          </Link>
           <div className="logoContainer">
             <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
             <img src={jsLogo} alt="Javascript logo" className="skillLogo" />

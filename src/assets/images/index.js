@@ -11,7 +11,13 @@ import text2 from "./text2.png";
 import text3 from "./text3.png";
 import text4 from "./text4.png";
 import text5 from "./text5.png";
-import text6 from "./text6.png";
+import awsLogo from "./aws.svg";
+import cssLogo from "./css.svg";
+import gitLogo from "./git.svg";
+import htmlLogo from "./html.svg";
+import jsLogo from "./javascript.svg";
+import reactLogo from "./react.svg";
+import selfie from "./selfie.jpg";
 
 export {
   brew1,
@@ -27,5 +33,11 @@ export {
   text3,
   text4,
   text5,
-  text6,
+  awsLogo,
+  cssLogo,
+  gitLogo,
+  htmlLogo,
+  jsLogo,
+  reactLogo,
+  selfie,
 };
