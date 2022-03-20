@@ -29,13 +29,6 @@
   color: black;
 }
 
-.navbarLinks a:hover,
-a:active {
-  color: #1a27c9;
-  text-decoration: underline;
-  /* font-weight: bold; */
-}
-
 .logo {
   font-size: 2rem;
   color: black;
@@ -125,6 +118,13 @@ a:active {
   }
   .navbarLinks li a {
     padding: 0.75rem;
+  }
+
+  .navbarLinks a:hover,
+  a:active {
+    color: #1a27c9;
+    text-decoration: underline;
+    /* font-weight: bold; */
   }
   .column {
     float: left;
