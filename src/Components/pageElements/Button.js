@@ -9,6 +9,7 @@ export default function ({ children, onClick }) {
       _active={{ color: "none" }}
       onClick={onClick}
       bg="transparent"
+      height="auto"
     >
       {children}
     </Button>

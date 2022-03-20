@@ -36,10 +36,8 @@ export default function ProjectModal(props) {
 
   return (
     <div>
-      <Button
-        onClick={openAndReset}
-        children={"Click to see more images of website"}
-      />
+      <Button onClick={openAndReset} children={props.children} />
+
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent maxW="1000px">
@@ -60,7 +58,7 @@ export default function ProjectModal(props) {
           </ModalBody>
 
           <ModalFooter>
-            <Button mr={3} onClick={back}>
+            <Button onClick={back}>
               {imagePage === 0 ? null : <ArrowLeftIcon />}
             </Button>
             <Button onClick={next}>
