@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import {
   Menu,
   MenuButton,
@@ -7,13 +8,10 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router";
-import { Link } from "react-router-dom";
 import "../App.css";
 import { headerLogo, headerLogoHover } from "../assets/images";
 
 export default function Navbar() {
-  const navigate = useNavigate();
   return (
     <div>
       <nav className="navbar">

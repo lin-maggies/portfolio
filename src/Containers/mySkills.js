@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import "../App.css";
 import Navbar from "../Components/Navbar";
-import awsLogo from "../assets/images/aws.svg";
-import cssLogo from "../assets/images/css.svg";
-import gitLogo from "../assets/images/git.svg";
-import htmlLogo from "../assets/images/html.svg";
-import jsLogo from "../assets/images/javascript.svg";
-import reactLogo from "../assets/images/react.svg";
+import {
+  awsLogo,
+  cssLogo,
+  gitLogo,
+  htmlLogo,
+  jsLogo,
+  reactLogo,
+} from "../assets/images";
 
 export default function MySkills() {
   useEffect(() => {

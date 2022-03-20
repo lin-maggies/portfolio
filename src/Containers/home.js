@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
 import Button from "../Components/pageElements/Button.js";
-import "../App.css";
 import {
   text1,
   brew1,
