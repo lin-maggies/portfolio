@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router";
 import "../App.css";
 import Navbar from "../Components/Navbar";
+import ProjectModal from "../Components/ProjectModal";
+import brew1 from "../assets/images/brew1.png";
+import brew2 from "../assets/images/brew2.png";
 
 export default function MyProjects() {
-  const navigate = useNavigate();
+  const beerImageArray = [brew1, brew2];
   return (
     <div>
       <Navbar />
@@ -25,6 +27,11 @@ export default function MyProjects() {
             {""}
             <ExternalLinkIcon />
           </a>
+          <ProjectModal
+            images={beerImageArray}
+            title="Beer Jerk/TextBeer"
+            number="2"
+          />
         </div>
       </div>
       <div className="sectionContainer">
