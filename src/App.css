@@ -45,7 +45,7 @@ p {
 
 .landingTitle:first-child {
   font-family: cartoon;
-  font-size: 5rem;
+  font-size: 3rem;
   color: black;
   line-height: 1;
   margin: 1rem 0 0;
@@ -53,7 +53,7 @@ p {
 
 .landingTitle {
   font-family: cartoon;
-  font-size: 4rem;
+  font-size: 2rem;
   color: black;
   line-height: 1;
   margin: 1rem 0 0;

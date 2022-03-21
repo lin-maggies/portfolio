@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../App.css";
 import Navbar from "../Components/Navbar";
-import teamPhotoBrew from "../assets/images/teamPhotoBrew.png";
+import teamPhotoBrew from "../assets/images/teamPhotoBrew.jpg";
 import photoClimb from "../assets/images/photoClimb.jpg";
 
 export default function AboutMe() {
