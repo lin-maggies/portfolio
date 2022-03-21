@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div className="column">
-            <img src={selfie} alt="Maggie" className="photoYellowbg" />
+            <img src={selfie} alt="Maggie" className="photoYellowBg" />
           </div>
         </div>
         <div className="sectionContainer">
@@ -45,21 +45,21 @@ export default function Home() {
               <img
                 src={text1}
                 alt="Screenshot of TextBeer website"
-                className="photo"
+                className="photoProj"
               />
             </Link>
             <Link to="/projects">
               <img
                 src={brew1}
                 alt="Screenshot of Brewenstein website"
-                className="photo"
+                className="photoProj"
               />
             </Link>
             <Link to="/projects">
               <img
                 src={port1}
                 alt="Screenshot of portfolio website"
-                className="photo"
+                className="photoProj"
               />
             </Link>
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="sectionPara">
             <Link to="/projects">
               <ButtonCust
-                children="Click here to see more"
+                children="See all"
                 border="1px"
                 borderColor="#1a27c9"
               />
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="sectionPara">
             <Link to="/skills">
               <ButtonCust
-                children="Click here to see more"
+                children="See all"
                 border="1px"
                 borderColor="#1a27c9"
               />

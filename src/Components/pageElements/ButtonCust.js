@@ -18,7 +18,7 @@ export default function ButtonCust({ children, onClick, borderColor, border }) {
       letterSpacing="0.1rem"
       borderColor={borderColor ? borderColor : "none"}
       border={border ? border : "none"}
-      marginTop="2rem"
+      marginTop="1rem"
     >
       {children}
     </Button>

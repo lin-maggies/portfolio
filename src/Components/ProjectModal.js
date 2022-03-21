@@ -57,7 +57,7 @@ export default function ProjectModal(props) {
               <img
                 src={props.images[imagePage]}
                 alt="project screenshots"
-                className="projPhoto"
+                className="modalPhoto"
               />
             </Flex>
           </ModalBody>

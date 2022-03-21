@@ -71,7 +71,7 @@ export default function MyProjects() {
               <img
                 src={text1}
                 alt="TextBeer website"
-                className="photoYellowbg"
+                className="photoProjYellowBg"
               />
             }
           />
@@ -108,7 +108,11 @@ export default function MyProjects() {
             images={brewImageArray}
             title="Brewenstein"
             children={
-              <img src={brew1} alt="Brewenstein website" className="photo" />
+              <img
+                src={brew1}
+                alt="Brewenstein website"
+                className="photoProj"
+              />
             }
           />
           <div className="buttonSpacing">
@@ -161,7 +165,7 @@ export default function MyProjects() {
               <img
                 src={port1}
                 alt="Portfolio website"
-                className="photoYellowbg"
+                className="photoProjYellowBg"
               />
             }
           />

@@ -121,11 +121,11 @@ p {
   border-radius: 0.25rem;
 }
 
-.photo:firs-child {
+.photo:first-child {
   margin-top: 1rem;
 }
 
-.photoYellowbg {
+.photoYellowBg {
   width: 25rem;
   border: 1px solid #1a27c9;
   border-radius: 0.25rem;
@@ -138,7 +138,19 @@ p {
   margin-top: 2rem;
 }
 
-.projPhoto {
+.photoProj {
+  width: 40rem;
+  border: 0.1rem solid #f7e05f;
+  border-radius: 0.25rem;
+}
+
+.photoProjYellowBg {
+  width: 40rem;
+  border: 0.1rem solid #1a27c9;
+  border-radius: 0.25rem;
+}
+
+.modalPhoto {
   max-width: 25rem;
   max-height: 55rem;
 }
@@ -222,7 +234,7 @@ p {
     border-radius: 5px;
   }
 
-  .photoYellowbg {
+  .photoYellowBg {
     width: 25rem;
     border: 1px solid #1a27c9;
     border-radius: 5px;
@@ -235,7 +247,7 @@ p {
     margin-bottom: 0;
   }
 
-  .projPhoto {
+  .modalPhoto {
     max-width: 50rem;
     max-height: 55rem;
   }
