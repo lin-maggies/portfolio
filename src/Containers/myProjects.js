@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import React, { useEffect } from "react";
 import "../App.css";
 import Navbar from "../Components/Navbar";
 import ProjectModal from "../Components/ProjectModal";
@@ -74,13 +73,15 @@ export default function MyProjects() {
               />
             }
           />
-          <ProjectModal
-            images={textImageArray}
-            title="Beer Jerk - TextBeer"
-            children="Click to see more images of website"
-            border="1px"
-            borderColor="#1a27c9"
-          />
+          <div className="buttonSpacing">
+            <ProjectModal
+              images={textImageArray}
+              title="Beer Jerk - TextBeer"
+              children="Click to see more images of website"
+              border="1px"
+              borderColor="#1a27c9"
+            />
+          </div>
         </div>
       </div>
       <div className="sectionContainer row">
@@ -108,13 +109,15 @@ export default function MyProjects() {
               <img src={brew1} alt="Photo of Brewenstein" className="photo" />
             }
           />
-          <ProjectModal
-            images={brewImageArray}
-            title="Brewenstein"
-            children="Click to see more images of website"
-            border="1px"
-            borderColor="#1a27c9"
-          />
+          <div className="buttonSpacing">
+            <ProjectModal
+              images={brewImageArray}
+              title="Brewenstein"
+              children="Click to see more images of website"
+              border="1px"
+              borderColor="#1a27c9"
+            />
+          </div>
         </div>
       </div>
       <div className="sectionColorContainer row">
@@ -131,8 +134,14 @@ export default function MyProjects() {
               things out. This is the first time I’ve set up a contact me form,
               and the moment when it started working was just amazing.
             </p>
-            <a href="https://www.lin-maggies.com/projects">
+            <a
+              className="projLinks"
+              href="https://www.lin-maggies.com/projects"
+            >
               https://www.lin-maggies.com/projects
+            </a>
+            <a href="https://github.com/lin-maggies/portfolio">
+              https://github.com/lin-maggies/portfolio
             </a>
           </div>
         </div>
@@ -149,13 +158,15 @@ export default function MyProjects() {
               />
             }
           />
-          <ProjectModal
-            images={portImageArray}
-            title="Portfolio"
-            children="Click to see more images of website"
-            border="1px"
-            borderColor="#1a27c9"
-          />
+          <div className="buttonSpacing">
+            <ProjectModal
+              images={portImageArray}
+              title="Portfolio"
+              children="Click to see more images of website"
+              border="1px"
+              borderColor="#1a27c9"
+            />
+          </div>
         </div>
       </div>
       <div className="sectionContainer">
