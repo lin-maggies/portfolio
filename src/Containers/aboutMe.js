@@ -24,10 +24,10 @@ export default function AboutMe() {
               Brewenstein decided to fold their business in the end, I learnt a
               lot about what it’s like to work in a team, having real life
               problems to solve. {""}
-              <p className="pMobile">Below </p>
+              <span className="pMobile">Below </span>
               {""}
-              <p className="pDesk">On the right </p> is a photo of me with the
-              rest of the Brewenstein team.
+              <span className="pDesk">On the right </span> is a photo of me with
+              the rest of the Brewenstein team.
             </p>
             <p>
               I started working at another company called Beer Jerk later in the
@@ -74,10 +74,10 @@ export default function AboutMe() {
             </p>
             <p>
               {""}
-              <p className="pMobile">Below </p>
+              <span className="pMobile">Below </span>
               {""}
-              <p className="pDesk">On the right </p> is a photo of me trying
-              really hard to hug a rock wall.
+              <span className="pDesk">On the right </span> is a photo of me
+              trying really hard to hug a rock wall.
             </p>
           </div>
         </div>
