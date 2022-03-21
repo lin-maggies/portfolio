@@ -11,6 +11,9 @@ import text2 from "./text2.png";
 import text3 from "./text3.png";
 import text4 from "./text4.png";
 import text5 from "./text5.png";
+import port1 from "./port1.png";
+import port2 from "./port2.png";
+import port3 from "./port3.png";
 import awsLogo from "./aws.svg";
 import cssLogo from "./css.svg";
 import gitLogo from "./git.svg";
@@ -35,6 +38,9 @@ export {
   text3,
   text4,
   text5,
+  port1,
+  port2,
+  port3,
   awsLogo,
   cssLogo,
   gitLogo,
