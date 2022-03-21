@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import "../App.css";
 import Navbar from "../Components/Navbar";
 import ProjectModal from "../Components/ProjectModal";
@@ -56,8 +57,9 @@ export default function MyProjects() {
               services using AWS SES, including setting up the email templates
               in JSON as well.
             </p>
-            <a href="https://www.textbeer.co.nz/">
+            <a className="projLinks" href="https://www.textbeer.co.nz/">
               https://www.textbeer.co.nz/
+              <ExternalLinkIcon />
             </a>
           </div>
         </div>
@@ -139,9 +141,14 @@ export default function MyProjects() {
               href="https://www.lin-maggies.com/projects"
             >
               https://www.lin-maggies.com/projects
+              <ExternalLinkIcon />
             </a>
-            <a href="https://github.com/lin-maggies/portfolio">
+            <a
+              className="projLinks"
+              href="https://github.com/lin-maggies/portfolio"
+            >
               https://github.com/lin-maggies/portfolio
+              <ExternalLinkIcon />
             </a>
           </div>
         </div>
