@@ -11,7 +11,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
-import Button from "../Components/pageElements/Button.js";
+import ButtonCust from "../Components/pageElements/ButtonCust.js";
 
 export default function ProjectModal(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -36,7 +36,7 @@ export default function ProjectModal(props) {
 
   return (
     <div>
-      <Button
+      <ButtonCust
         onClick={openAndReset}
         children={props.children}
         border={props.border}
@@ -63,14 +63,14 @@ export default function ProjectModal(props) {
           </ModalBody>
 
           <ModalFooter>
-            <Button onClick={back}>
+            <ButtonCust onClick={back}>
               {imagePage === 0 ? null : <ArrowLeftIcon />}
-            </Button>
-            <Button onClick={next}>
+            </ButtonCust>
+            <ButtonCust onClick={next}>
               {imagePage === props.images.length - 1 ? null : (
                 <ArrowRightIcon />
               )}
-            </Button>
+            </ButtonCust>
           </ModalFooter>
         </ModalContent>
       </Modal>

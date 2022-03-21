@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
-import Button from "../Components/pageElements/Button.js";
+import ButtonCust from "../Components/pageElements/ButtonCust.js";
 import {
   text1,
   brew1,
@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div className="column">
-            <img src={selfie} alt="Photo of maggie" className="photoYellowbg" />
+            <img src={selfie} alt="Maggie" className="photoYellowbg" />
           </div>
         </div>
         <div className="sectionContainer">
@@ -66,7 +66,7 @@ export default function Home() {
 
           <div className="sectionPara">
             <Link to="/projects">
-              <Button
+              <ButtonCust
                 children="Click here to see more"
                 border="1px"
                 borderColor="#1a27c9"
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className="sectionPara">
             <Link to="/skills">
-              <Button
+              <ButtonCust
                 children="Click here to see more"
                 border="1px"
                 borderColor="#1a27c9"

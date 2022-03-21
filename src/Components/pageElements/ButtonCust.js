@@ -1,7 +1,7 @@
 import React from "react";
-import { Button, textDecoration } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
-export default function ({ children, onClick, borderColor, border }) {
+export default function ButtonCust({ children, onClick, borderColor, border }) {
   return (
     <Button
       _focus={{ color: "none" }}
