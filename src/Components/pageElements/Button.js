@@ -5,7 +5,10 @@ export default function ({ children, onClick, borderColor, border }) {
   return (
     <Button
       _focus={{ color: "none" }}
-      _hover={{ color: "#1a27c9", textShadow: "0 0 0.65px #1a27c9" }}
+      _hover={{
+        color: "#1a27c9",
+        textShadow: "0 0 0.5px #1a27c9, 0.5px 0 0 #1a27c9;",
+      }}
       _active={{ color: "none" }}
       onClick={onClick}
       fontWeight="light"
@@ -15,6 +18,7 @@ export default function ({ children, onClick, borderColor, border }) {
       letterSpacing="0.1rem"
       borderColor={borderColor ? borderColor : "none"}
       border={border ? border : "none"}
+      marginTop="2rem"
     >
       {children}
     </Button>
