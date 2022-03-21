@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  padding: 0.5rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffffe6;
+  width: 100%;
+  padding: 0 5%;
+  height: 6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navLogo {
+  height: 3rem;
+}
+
+.navbarBurger a {
+  width: 100%;
+}
+
+.navbarLinks {
+  display: none;
+}
+
+.sectionColorContainer {
+  background-color: #f7e05f;
+  width: 100%;
+  padding: 15% 5% 10%;
+}
+
+.sectionContainer {
+  background-color: #ffffffe6;
+  width: 100%;
+  padding: 15% 5% 10%;
+}
+
+.sectionTitle {
+  font-family: cartoon;
+  font-size: 4rem;
+  color: black;
+  line-height: 1;
+  padding: 1rem 0 3rem;
+}
+
+.sectionPara {
+  margin: 1rem 0 2rem;
+}
+
+.sectionPara a {
+  color: #1a27c9;
+}
+
+.sectionPara a:hover {
+  text-shadow: 0 0 0.5px #1a27c9, 0.5px 0 0 #1a27c9;
+  text-decoration: underline;
+}
+
+.projLinks {
+  display: flex;
+  align-items: center;
+}
+/* .projLinks a {
+  vertical-align: middle;
+}
+
+.projLinks svg {
+  vertical-align: middle;
+  font-size: 1rem;
+} */
+
+.contactFormContainer {
+  border: 1px solid #1a27c9;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #f7e05f;
+}
+
+.contactForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  gap: 0.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.contactForm input {
+  background-color: #ffffffe6;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.flexContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 3rem 0 2rem;
+}
+
+.skillLogo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.skillLogo:firs-child {
+  margin-top: 2rem;
+}
+
+.photo {
+  width: 25rem;
+  border: 0.1rem solid #f7e05f;
+  border-radius: 0.25rem;
+}
+
+.photo:firs-child {
+  margin-top: 1rem;
+}
+
+.photoYellowbg {
+  width: 25rem;
+  border: 1px solid #1a27c9;
+  border-radius: 0.25rem;
+}
+
+.photoLand {
+  width: 50rem;
+  border: 0.1rem solid #1a27c9;
+  border-radius: 0.25rem;
+  margin-top: 2rem;
+}
+
+.projPhoto {
+  max-width: 25rem;
+  max-height: 55rem;
+}
+
+.column {
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pDesk {
+  display: none;
+  padding: 0;
+}
+
+.pMobile {
+  display: inline-block;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbarBurger {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbarLinks {
+    display: flex;
+    font-size: 1rem;
   }
+
+  .navbarLinks li {
+    list-style: none;
+  }
+
+  .navbarLinks li a {
+    padding: 0.75rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .navbarLinks li a:hover,
+  a:active {
+    color: #1a27c9;
+    text-decoration: underline;
+    text-shadow: 0 0 0.5px #1a27c9, 0.5px 0 0 #1a27c9;
+  }
+
+  .sectionColorContainer {
+    background-color: #f7e05f;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .sectionContainer {
+    background-color: #ffffffe6;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .sectionTitle {
+    line-height: 1.5;
+  }
+
+  .contactFormContainer {
+    width: 50%;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    vertical-align: middle;
+  }
+
+  .photo {
+    width: 25rem;
+    border: 2px solid #f7e05f;
+    border-radius: 5px;
+  }
+
+  .photoYellowbg {
+    width: 25rem;
+    border: 1px solid #1a27c9;
+    border-radius: 5px;
+  }
+
+  .photoLand {
+    width: 50rem;
+    border: 1px solid #1a27c9;
+    border-radius: 5px;
+    margin-bottom: 0;
+  }
+
+  .projPhoto {
+    max-width: 50rem;
+    max-height: 55rem;
+  }
+
+  .pDesk {
+    display: inline-block;
+  }
+
+  .pMobile {
+    display: none;
+  }
+
+  .buttonSpacing {
+    margin-left: 1rem;
+  }
+}
+
+@font-face {
+  font-family: "cartoon";
+  src: url("./assets/fonts/CartoonBlocks.ttf") format("truetype");
 }
