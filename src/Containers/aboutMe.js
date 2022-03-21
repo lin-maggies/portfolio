@@ -65,7 +65,7 @@ export default function AboutMe() {
         <div className="column">
           <img
             src={teamPhotoBrew}
-            alt="Brewenstein team photo"
+            alt="Brewenstein team"
             className="photoLand"
           />
         </div>
@@ -90,11 +90,7 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="column">
-          <img
-            src={photoClimb}
-            alt="Maggie's climbing photo"
-            className="photo"
-          />
+          <img src={photoClimb} alt="Maggie rock climbing" className="photo" />
         </div>
       </div>
     </div>
