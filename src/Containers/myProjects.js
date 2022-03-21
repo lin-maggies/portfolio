@@ -38,8 +38,8 @@ export default function MyProjects() {
     <div>
       <Navbar />
       <div className="sectionColorContainer row">
+        <h1 className="sectionTitle">Beer Jerk - TextBeer</h1>
         <div className="column">
-          <h1 className="sectionTitle">Beer Jerk/TextBeer</h1>
           <div className="sectionPara">
             <p>Tools: React, Javascript, AWS, CSS, HTML</p>
             <p>Sep 2021 - Present</p>
@@ -52,21 +52,21 @@ export default function MyProjects() {
               in JSON as well.
             </p>
             <a href="https://www.textbeer.co.nz/">
-              <ExternalLinkIcon />
+              https://www.textbeer.co.nz/
             </a>
           </div>
         </div>
         <div className="column">
           <ProjectModal
             images={textImageArray}
-            title="Beer Jerk/TextBeer"
+            title="Beer Jerk - TextBeer"
             children={
               <img src={text1} alt="Photo of TextBeer" className="photo" />
             }
           />
           <ProjectModal
             images={textImageArray}
-            title="Beer Jerk/TextBeer"
+            title="Beer Jerk - TextBeer"
             children="Click to see more images of website"
             border="1px"
             borderColor="#1a27c9"
@@ -74,8 +74,8 @@ export default function MyProjects() {
         </div>
       </div>
       <div className="sectionContainer row">
+        <h1 className="sectionTitle">Brewenstein</h1>
         <div className="column">
-          <h1 className="sectionTitle">Brewenstein</h1>
           <div className="sectionPara">
             <p>Tools: React, Typescript, CSS, HTML</p>
             <p>Mar 2021 - Sep 2021</p>
@@ -121,7 +121,7 @@ export default function MyProjects() {
             when it started working was just amazing.
           </p>
           <a href="https://www.lin-maggies.com/projects">
-            <ExternalLinkIcon />
+            https://www.lin-maggies.com/projects
           </a>
         </div>
       </div>

@@ -65,7 +65,7 @@ export default function ContactForm() {
         />
 
         <button type="submit">
-          <Button children="Submit" border="1px" borderColor="#1a27c9" />
+          <Button children="Send message" border="1px" borderColor="#1a27c9" />
         </button>
       </form>
     </div>

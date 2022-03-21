@@ -40,14 +40,26 @@ export default function Home() {
             My projects
           </Link>
           <div className="flexContainer">
-            <Link className="sectionTitle" to="/projects">
-              <img src={text1} alt="Photo of maggie" className="photo" />
+            <Link to="/projects">
+              <img
+                src={text1}
+                alt="Screenshot of TextBeer website"
+                className="photo"
+              />
             </Link>
-            <Link className="sectionTitle" to="/projects">
-              <img src={brew1} alt="Photo of maggie" className="photo" />
+            <Link to="/projects">
+              <img
+                src={brew1}
+                alt="Screenshot of Brewenstein website"
+                className="photo"
+              />
             </Link>
-            <Link className="sectionTitle" to="/projects">
-              <img src={brew1} alt="Photo of maggie" className="photo" />
+            <Link to="/projects">
+              <img
+                src={brew1}
+                alt="Screenshot of portfolio website"
+                className="photo"
+              />
             </Link>
           </div>
 
