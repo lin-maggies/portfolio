@@ -114,7 +114,7 @@ p {
 
 .photo {
   width: 25rem;
-  border: 0.25rem solid #f7e05f;
+  border: 0.1rem solid #f7e05f;
   border-radius: 0.25rem;
 }
 
@@ -122,9 +122,15 @@ p {
   margin-top: 1rem;
 }
 
+.photoYellowbg {
+  width: 25rem;
+  border: 1px solid #1a27c9;
+  border-radius: 0.25rem;
+}
+
 .photoLand {
   width: 50rem;
-  border: 0.25rem solid #f7e05f;
+  border: 0.1rem solid #1a27c9;
   border-radius: 0.25rem;
   margin-top: 2rem;
 }
@@ -199,13 +205,19 @@ p {
 
   .photo {
     width: 25rem;
-    border: 5px solid #f7e05f;
+    border: 2px solid #f7e05f;
+    border-radius: 5px;
+  }
+
+  .photoYellowbg {
+    width: 25rem;
+    border: 1px solid #1a27c9;
     border-radius: 5px;
   }
 
   .photoLand {
     width: 50rem;
-    border: 5px solid #f7e05f;
+    border: 1px solid #1a27c9;
     border-radius: 5px;
     margin-bottom: 0;
   }

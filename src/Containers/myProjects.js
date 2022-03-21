@@ -17,6 +17,9 @@ import {
   text3,
   text4,
   text5,
+  port1,
+  port2,
+  port3,
 } from "../assets/images";
 
 export default function MyProjects() {
@@ -31,9 +34,12 @@ export default function MyProjects() {
     brew8,
   ];
   const textImageArray = [text1, text2, text3, text4, text5];
+  const portImageArray = [port1, port2, port3];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
       <Navbar />
@@ -61,7 +67,11 @@ export default function MyProjects() {
             images={textImageArray}
             title="Beer Jerk - TextBeer"
             children={
-              <img src={text1} alt="Photo of TextBeer" className="photo" />
+              <img
+                src={text1}
+                alt="Photo of TextBeer"
+                className="photoYellowbg"
+              />
             }
           />
           <ProjectModal
@@ -107,22 +117,45 @@ export default function MyProjects() {
           />
         </div>
       </div>
-      <div className="sectionColorContainer">
+      <div className="sectionColorContainer row">
         <h1 className="sectionTitle">Maggie's Portfolio</h1>
-        <div className="sectionPara">
-          <p>Tools: React, Javascript, AWS, CSS, HTML</p>
-          <p>Mar 2022</p>
-          <p>
-            The biggest lesson here is suddenly realising how hard UI designers'
-            jobs are. Choosing colors and figuring out how to best present the
-            website is definitely not as simple as it seems. But I also really
-            enjoyed just playing around with this website, trying things out.
-            This is the first time I’ve set up a contact me form, and the moment
-            when it started working was just amazing.
-          </p>
-          <a href="https://www.lin-maggies.com/projects">
-            https://www.lin-maggies.com/projects
-          </a>
+        <div className="column">
+          <div className="sectionPara">
+            <p>Tools: React, Javascript, AWS, CSS, HTML</p>
+            <p>Mar 2022</p>
+            <p>
+              The biggest lesson here is suddenly realising how hard UI
+              designers' jobs are. Choosing colors and figuring out how to best
+              present the website is definitely not as simple as it seems. But I
+              also really enjoyed just playing around with this website, trying
+              things out. This is the first time I’ve set up a contact me form,
+              and the moment when it started working was just amazing.
+            </p>
+            <a href="https://www.lin-maggies.com/projects">
+              https://www.lin-maggies.com/projects
+            </a>
+          </div>
+        </div>
+
+        <div className="column">
+          <ProjectModal
+            images={portImageArray}
+            title="Portfolio"
+            children={
+              <img
+                src={port1}
+                alt="Photo of portfolio"
+                className="photoYellowbg"
+              />
+            }
+          />
+          <ProjectModal
+            images={portImageArray}
+            title="Portfolio"
+            children="Click to see more images of website"
+            border="1px"
+            borderColor="#1a27c9"
+          />
         </div>
       </div>
       <div className="sectionContainer">

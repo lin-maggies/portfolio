@@ -7,6 +7,7 @@ import Button from "../Components/pageElements/Button.js";
 import {
   text1,
   brew1,
+  port1,
   awsLogo,
   cssLogo,
   gitLogo,
@@ -32,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div className="column">
-            <img src={selfie} alt="Photo of maggie" className="photo" />
+            <img src={selfie} alt="Photo of maggie" className="photoYellowbg" />
           </div>
         </div>
         <div className="sectionContainer">
@@ -56,7 +57,7 @@ export default function Home() {
             </Link>
             <Link to="/projects">
               <img
-                src={brew1}
+                src={port1}
                 alt="Screenshot of portfolio website"
                 className="photo"
               />
