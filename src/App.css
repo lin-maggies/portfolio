@@ -43,12 +43,28 @@ p {
   padding: 15% 5% 10%;
 }
 
+.landingTitle:first-child {
+  font-family: cartoon;
+  font-size: 5rem;
+  color: black;
+  line-height: 1;
+  margin: 1rem 0 0;
+}
+
+.landingTitle {
+  font-family: cartoon;
+  font-size: 4rem;
+  color: black;
+  line-height: 1;
+  margin: 1rem 0 0;
+}
+
 .sectionTitle {
   font-family: cartoon;
   font-size: 4rem;
   color: black;
   line-height: 1;
-  padding: 1rem 0 3rem;
+  margin: 1rem 0 3rem;
 }
 
 .sectionPara {
@@ -199,6 +215,26 @@ p {
     color: #1a27c9;
     text-decoration: underline;
     text-shadow: 0 0 0.5px #1a27c9, 0.5px 0 0 #1a27c9;
+  }
+
+  .landingTitle {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .landingTitle:first-child {
+    font-size: 5rem;
+    line-height: 1.5;
+    margin: 1rem 0 0;
+  }
+
+  .landingPara {
+    margin: 5rem 0 0;
+  }
+
+  .landingPara p {
+    margin-bottom: 5rem;
   }
 
   .sectionColorContainer {

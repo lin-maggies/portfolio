@@ -27,9 +27,22 @@ export default function Home() {
       <div>
         <div className="sectionColorContainer row">
           <div className="column">
-            <h1 className="sectionTitle">Hi, I'm Maggie Lin.</h1>
-            <div className="sectionPara">
-              <p>I'm a web developer.</p>
+            <h1 className="landingTitle">Hi, I'm Maggie Lin.</h1>
+            <h1 className="landingTitle">I'm a web developer.</h1>
+            <div className="landingPara">
+              <p>
+                I started my coding journey in 2020. I've always been very fond
+                of programming. Then I finally decided that 2020 is the time to
+                start making changes to my life.
+              </p>
+              <div className="flexContainer">
+                <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
+                <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
+                <img src={cssLogo} alt="CSS logo" className="skillLogo" />
+                <img src={awsLogo} alt="AWS logo" className="skillLogo" />
+                <img src={gitLogo} alt="Git logo" className="skillLogo" />
+                <img src={reactLogo} alt="React logo" className="skillLogo" />
+              </div>
             </div>
           </div>
           <div className="column">
@@ -74,30 +87,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-
         <div className="sectionColorContainer">
-          <Link className="sectionTitle" to="/skills">
-            My Skills
-          </Link>
-          <div className="flexContainer">
-            <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
-            <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
-            <img src={cssLogo} alt="CSS logo" className="skillLogo" />
-            <img src={awsLogo} alt="AWS logo" className="skillLogo" />
-            <img src={gitLogo} alt="Git logo" className="skillLogo" />
-            <img src={reactLogo} alt="React logo" className="skillLogo" />
-          </div>
-          <div className="sectionPara">
-            <Link to="/skills">
-              <ButtonCust
-                children="See all"
-                border="1px"
-                borderColor="#1a27c9"
-              />
-            </Link>
-          </div>
-        </div>
-        <div className="sectionContainer">
           <h1 className="sectionTitle">Contact me</h1>
           <ContactForm />
         </div>

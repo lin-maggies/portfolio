@@ -16,14 +16,6 @@ export default function AboutMe() {
         <div className="column">
           <div className="sectionPara">
             <p>
-              I started my coding journey in 2020. I've always been very fond of
-              the whole programming world. I had the opportunity to do a
-              computer science 101 course back in university, which I thought
-              was fascinating, but I never took the plunge to dive into the
-              coding world back then. Then I finally decided 2020 is the time to
-              start making changes to my life.
-            </p>
-            <p>
               I had the opportunity to intern at a company called
               Brewenstein/Brewers Clan in early 2021, where the learning really
               accelerated exponentially once I started interning. I’ve really
