@@ -15,6 +15,7 @@ import {
   jsLogo,
   reactLogo,
   selfie,
+  selfieSmall,
 } from "../assets/images";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <Navbar />
       <div>
         <div className="sectionColorContainer row">
+          <img src={selfieSmall} alt="Maggie" className="photoHeroSmall" />
           <div className="column">
             <h1 className="landingTitle">Hi, I'm Maggie Lin.</h1>
             <h1 className="landingTitle">I'm a web developer.</h1>
@@ -46,7 +48,7 @@ export default function Home() {
             </div>
           </div>
           <div className="column">
-            <img src={selfie} alt="Maggie" className="photoYellowBg" />
+            <img src={selfie} alt="Maggie" className="photoHeroBig" />
           </div>
         </div>
         <div className="sectionContainer">

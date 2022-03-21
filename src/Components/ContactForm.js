@@ -64,13 +64,12 @@ export default function ContactForm() {
           required
         />
         <div>
-          <button type="submit">
-            <ButtonCust
-              children="Send message"
-              border="1px"
-              borderColor="#1a27c9"
-            />
-          </button>
+          <ButtonCust
+            type="submit"
+            children="Send message"
+            border="1px"
+            borderColor="#1a27c9"
+          />
         </div>
       </form>
     </div>

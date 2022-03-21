@@ -1,7 +1,13 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 
-export default function ButtonCust({ children, onClick, borderColor, border }) {
+export default function ButtonCust({
+  children,
+  onClick,
+  borderColor,
+  border,
+  type,
+}) {
   return (
     <Button
       _focus={{ color: "none" }}
@@ -19,6 +25,7 @@ export default function ButtonCust({ children, onClick, borderColor, border }) {
       borderColor={borderColor ? borderColor : "none"}
       border={border ? border : "none"}
       marginTop="1rem"
+      type={type ? type : "none"}
     >
       {children}
     </Button>

@@ -45,7 +45,7 @@ p {
 
 .landingTitle:first-child {
   font-family: cartoon;
-  font-size: 3rem;
+  font-size: 4rem;
   color: black;
   line-height: 1;
   margin: 1rem 0 0;
@@ -53,10 +53,10 @@ p {
 
 .landingTitle {
   font-family: cartoon;
-  font-size: 2rem;
+  font-size: 3rem;
   color: black;
   line-height: 1;
-  margin: 1rem 0 0;
+  margin: 1rem 0 2rem;
 }
 
 .sectionTitle {
@@ -84,14 +84,6 @@ p {
   display: flex;
   align-items: center;
 }
-/* .projLinks a {
-  vertical-align: middle;
-}
-
-.projLinks svg {
-  vertical-align: middle;
-  font-size: 1rem;
-} */
 
 .contactFormContainer {
   border: 1px solid #1a27c9;
@@ -145,6 +137,16 @@ p {
   width: 25rem;
   border: 1px solid #1a27c9;
   border-radius: 0.25rem;
+}
+
+.photoHeroSmall {
+  width: 15rem;
+  border: 1px solid #1a27c9;
+  border-radius: 0.25rem;
+}
+
+.photoHeroBig {
+  display: none;
 }
 
 .photoLand {
@@ -255,6 +257,17 @@ p {
 
   .contactFormContainer {
     width: 50%;
+  }
+
+  .photoHeroSmall {
+    display: none;
+  }
+
+  .photoHeroBig {
+    width: 25rem;
+    border: 1px solid #1a27c9;
+    border-radius: 0.25rem;
+    display: block;
   }
 
   .column {
