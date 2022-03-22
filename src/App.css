@@ -43,12 +43,28 @@ p {
   padding: 15% 5% 10%;
 }
 
+.landingTitle {
+  font-family: cartoon;
+  font-size: 4rem;
+  color: black;
+  line-height: 1;
+  margin: 1rem 0 0;
+}
+
 .sectionTitle {
   font-family: cartoon;
   font-size: 4rem;
   color: black;
   line-height: 1;
-  padding: 1rem 0 3rem;
+  margin: 1rem 0 3rem;
+}
+
+.sectionTitleProject {
+  font-family: cartoon;
+  font-size: 4rem;
+  color: black;
+  line-height: 1;
+  margin: 1rem 0 0;
 }
 
 .sectionPara {
@@ -64,18 +80,21 @@ p {
   text-decoration: underline;
 }
 
+.sectionPara h2:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.sectionPara h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
 .projLinks {
   display: flex;
   align-items: center;
 }
-/* .projLinks a {
-  vertical-align: middle;
-}
-
-.projLinks svg {
-  vertical-align: middle;
-  font-size: 1rem;
-} */
 
 .contactFormContainer {
   border: 1px solid #1a27c9;
@@ -121,14 +140,24 @@ p {
   border-radius: 0.25rem;
 }
 
-.photo:firs-child {
+.photo:first-child {
   margin-top: 1rem;
 }
 
-.photoYellowbg {
+.photoYellowBg {
   width: 25rem;
   border: 1px solid #1a27c9;
   border-radius: 0.25rem;
+}
+
+.photoHeroSmall {
+  width: 15rem;
+  border: 1px solid #1a27c9;
+  border-radius: 0.25rem;
+}
+
+.photoHeroBig {
+  display: none;
 }
 
 .photoLand {
@@ -138,7 +167,19 @@ p {
   margin-top: 2rem;
 }
 
-.projPhoto {
+.photoProj {
+  width: 40rem;
+  border: 0.1rem solid #f7e05f;
+  border-radius: 0.25rem;
+}
+
+.photoProjYellowBg {
+  width: 40rem;
+  border: 0.1rem solid #1a27c9;
+  border-radius: 0.25rem;
+}
+
+.modalPhoto {
   max-width: 25rem;
   max-height: 55rem;
 }
@@ -161,6 +202,12 @@ p {
 .pMobile {
   display: inline-block;
   padding: 0;
+}
+
+.bullet {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 0.5rem 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -189,6 +236,20 @@ p {
     text-shadow: 0 0 0.5px #1a27c9, 0.5px 0 0 #1a27c9;
   }
 
+  .landingTitle {
+    font-size: 5rem;
+    line-height: 1.5;
+    margin: 1rem 0 0;
+  }
+
+  .landingPara {
+    margin: 5rem 0 0;
+  }
+
+  .landingPara p {
+    margin-bottom: 5rem;
+  }
+
   .sectionColorContainer {
     background-color: #f7e05f;
     width: 100%;
@@ -204,15 +265,29 @@ p {
   .sectionTitle {
     line-height: 1.5;
   }
+  .sectionTitleProject {
+    line-height: 1.5;
+  }
 
   .contactFormContainer {
     width: 50%;
   }
 
+  .photoHeroSmall {
+    display: none;
+  }
+
+  .photoHeroBig {
+    width: 25rem;
+    border: 1px solid #1a27c9;
+    border-radius: 0.25rem;
+    display: block;
+  }
+
   .column {
     float: left;
     width: 50%;
-    padding: 15px;
+    padding: 15px 0;
     vertical-align: middle;
   }
 
@@ -222,7 +297,7 @@ p {
     border-radius: 5px;
   }
 
-  .photoYellowbg {
+  .photoYellowBg {
     width: 25rem;
     border: 1px solid #1a27c9;
     border-radius: 5px;
@@ -235,7 +310,7 @@ p {
     margin-bottom: 0;
   }
 
-  .projPhoto {
+  .modalPhoto {
     max-width: 50rem;
     max-height: 55rem;
   }
@@ -250,6 +325,7 @@ p {
 
   .buttonSpacing {
     margin-left: 1rem;
+    margin-top: 1rem;
   }
 }
 

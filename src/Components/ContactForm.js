@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../Components/pageElements/Button.js";
+import ButtonCust from "../Components/pageElements/ButtonCust.js";
 
 export default function ContactForm() {
   const [email, setEmail] = useState("");
@@ -63,10 +63,14 @@ export default function ContactForm() {
           value={message}
           required
         />
-
-        <button type="submit">
-          <Button children="Send message" border="1px" borderColor="#1a27c9" />
-        </button>
+        <div>
+          <ButtonCust
+            type="submit"
+            children="Send message"
+            border="1px"
+            borderColor="#1a27c9"
+          />
+        </div>
       </form>
     </div>
   );

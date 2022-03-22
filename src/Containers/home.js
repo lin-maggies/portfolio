@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import Navbar from "../Components/Navbar";
 import ContactForm from "../Components/ContactForm";
-import Button from "../Components/pageElements/Button.js";
+import ButtonCust from "../Components/pageElements/ButtonCust.js";
 import {
   text1,
   brew1,
@@ -15,6 +15,7 @@ import {
   jsLogo,
   reactLogo,
   selfie,
+  selfieSmall,
 } from "../assets/images";
 
 export default function Home() {
@@ -26,14 +27,28 @@ export default function Home() {
       <Navbar />
       <div>
         <div className="sectionColorContainer row">
+          <img src={selfieSmall} alt="Maggie" className="photoHeroSmall" />
           <div className="column">
-            <h1 className="sectionTitle">Hi, I'm Maggie Lin.</h1>
-            <div className="sectionPara">
-              <p>I'm a web developer.</p>
+            <h1 className="landingTitle">Hi, I'm Maggie Lin.</h1>
+            <h1 className="landingTitle">I'm a web developer.</h1>
+            <div className="landingPara">
+              <p>
+                I started my coding journey in 2020. I've always been very fond
+                of programming. Then I finally decided that 2020 is the time to
+                start making changes to my life.
+              </p>
+              <div className="flexContainer">
+                <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
+                <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
+                <img src={cssLogo} alt="CSS logo" className="skillLogo" />
+                <img src={awsLogo} alt="AWS logo" className="skillLogo" />
+                <img src={gitLogo} alt="Git logo" className="skillLogo" />
+                <img src={reactLogo} alt="React logo" className="skillLogo" />
+              </div>
             </div>
           </div>
           <div className="column">
-            <img src={selfie} alt="Photo of maggie" className="photoYellowbg" />
+            <img src={selfie} alt="Maggie" className="photoHeroBig" />
           </div>
         </div>
         <div className="sectionContainer">
@@ -45,59 +60,36 @@ export default function Home() {
               <img
                 src={text1}
                 alt="Screenshot of TextBeer website"
-                className="photo"
+                className="photoProj"
               />
             </Link>
             <Link to="/projects">
               <img
                 src={brew1}
                 alt="Screenshot of Brewenstein website"
-                className="photo"
+                className="photoProj"
               />
             </Link>
             <Link to="/projects">
               <img
                 src={port1}
                 alt="Screenshot of portfolio website"
-                className="photo"
+                className="photoProj"
               />
             </Link>
           </div>
 
           <div className="sectionPara">
             <Link to="/projects">
-              <Button
-                children="Click here to see more"
+              <ButtonCust
+                children="See all"
                 border="1px"
                 borderColor="#1a27c9"
               />
             </Link>
           </div>
         </div>
-
         <div className="sectionColorContainer">
-          <Link className="sectionTitle" to="/skills">
-            My Skills
-          </Link>
-          <div className="flexContainer">
-            <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
-            <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
-            <img src={cssLogo} alt="CSS logo" className="skillLogo" />
-            <img src={awsLogo} alt="AWS logo" className="skillLogo" />
-            <img src={gitLogo} alt="Git logo" className="skillLogo" />
-            <img src={reactLogo} alt="React logo" className="skillLogo" />
-          </div>
-          <div className="sectionPara">
-            <Link to="/skills">
-              <Button
-                children="Click here to see more"
-                border="1px"
-                borderColor="#1a27c9"
-              />
-            </Link>
-          </div>
-        </div>
-        <div className="sectionContainer">
           <h1 className="sectionTitle">Contact me</h1>
           <ContactForm />
         </div>

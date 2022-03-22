@@ -19,6 +19,7 @@ export default function Navbar() {
           <img
             src={headerLogo}
             className="navLogo"
+            alt="logo"
             onMouseOver={(e) => (e.currentTarget.src = headerLogoHover)}
             onMouseOut={(e) => (e.currentTarget.src = headerLogo)}
           />

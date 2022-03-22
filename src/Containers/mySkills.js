@@ -24,10 +24,11 @@ export default function MySkills() {
             <p>
               My main expertise is in front-end development building responsive
               web apps using React, Javascript, HTML and CSS. However, I’m also
-              familiar with AWS' services for back-end and website hosting. This
-              includes using their Lambda, API Gateway, SES, Cognito, S3 etc. I
-              am comfortable building Lambda functions, creating API endpoints
-              in API Gateway, using SES to set up emails etc.
+              familiar with AWS' cloud services for back-end and website
+              hosting. This includes using their Lambda, API Gateway, SES,
+              Cognito, S3 etc. I am comfortable building Lambda functions,
+              creating API endpoints in API Gateway, using SES to set up emails
+              etc.
             </p>
             <p>
               I have also used a lot of third party APIs. I’ve used Stripe for
@@ -38,7 +39,9 @@ export default function MySkills() {
             <p>
               I’ve worked in two projects that practices Agile/Scrum
               methodology, and have been working in a team environment solving
-              real life problems.
+              real life problems. I am also experienced in problem management,
+              as I have been doing that a lot through my projects, whether it's
+              time pressing or not.
             </p>
           </div>
         </div>
