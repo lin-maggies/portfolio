@@ -212,6 +212,12 @@ p {
   padding: 0;
 }
 
+.bullet {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 0.5rem 0;
+}
+
 @media only screen and (min-width: 768px) {
   .navbarBurger {
     display: none;
