@@ -16,14 +16,15 @@ export default function AboutMe() {
         <div className="column">
           <div className="sectionPara">
             <p>
-              I had the opportunity to intern at a company called
-              Brewenstein/Brewers Clan in early 2021, where the learning really
-              accelerated exponentially once I started interning. I’ve really
-              enjoyed the journey, the problem solving, the constant learning
-              and challenges we face as a team. It’s a lot of fun. Although
+              I had the opportunity to intern at a startup company called
+              Brewenstein/Brewers Clan in early 2021, where my learning really
+              started to accelerate exponentially. I’ve really enjoyed the
+              journey, the problem solving, the constant learning and the
+              challenges we face as a team. It’s a lot of fun. Although
               Brewenstein decided to fold their business in the end, I learnt a
-              lot about what it’s like to work in a team, having real life
-              problems to solve. {""}
+              lot about what it’s like to work in a team, how time and money
+              really matters in a company's operation, and how that could affect
+              decisions on project planning. {""}
               <span className="pMobile">Below </span>
               {""}
               <span className="pDesk">On the right </span> is a photo of me with
@@ -35,22 +36,22 @@ export default function AboutMe() {
               project had a low fidelity design process, so it has been
               interesting to be a very big part of deciding what the end product
               looks like. Also getting the full experience of what it's like to
-              have a live product.
+              have a product that is launched and having real users.
             </p>
             <p>
               While working for Beer Jerk, I've met some other amazing people,
-              where I got the opportunity to join their startup, This Local
+              where I got the opportunity to join another startup, This Local
               Piggy. Although I've only been in the company for a very brief
-              time, being in a new team just brings new perspectives of how
+              time, being in a new team really brings new perspectives of how
               other dev teams could function. I got to be part of learning more
               of being conscious of scalability, proof of concept, exit
               strategies, etc.
             </p>
             <p>
-              And in January 2022, I decided to quit my other full time job
+              And in January 2022, I decided to quit my actual full time job
               that’s in the logistic industry, and to fully devote my time and
               energy in web development. As I can really see myself growing this
-              career, and really enjoying the journey.
+              career, and really enjoying the coding journey.
             </p>
           </div>
         </div>
