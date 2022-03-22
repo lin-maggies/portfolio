@@ -51,30 +51,42 @@ export default function MyProjects() {
           <div className="sectionPara">
             <h2>Project setup:</h2>
             <p>
-              In this project, we used third party API's such as Stripe for
-              payments, and Clicksend for SMS services. We used AWS to host our
-              website on Amplify, and used Lambda and API gateway for our
-              back-end environment. I also did the flow of setting up email
-              services using AWS SES, including setting up the email templates
-              in JSON as well.
+              The website was hosted on AWS Amplify. The front-end code was
+              built in React. The back-end environment utilises various AWS
+              cloud services, such as Lambda, API Gateway, DynamoDB, Cognito,
+              SES and S3. Stripe was used for payment processing, ClickSend was
+              used for SMS services.
             </p>
             <h2>My contribution:</h2>
             <ul className="bullet">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                Set up transactional emails - from HTML email template to
+                backend code and SES system setup
+              </li>
+              <li>Front-end web development on website using React</li>
+              <li>
+                Back-end web development using AWS Lambda, API Gateway,
+                DynamoDB, Cognito and S3
+              </li>
+              <li>Agile/SCRUM development using ClickUp</li>
+              <li>Facilitate multiple sales during beta launch</li>
+              <li>Utilise problem management to mitigate issues</li>
             </ul>
             <h2>My learning:</h2>
             <p>
-              In this project, we used third party API's such as Stripe for
-              payments, and Clicksend for SMS services. We used AWS to host our
-              website on Amplify, and used Lambda and API gateway for our
-              back-end environment. I also did the flow of setting up email
-              services using AWS SES, including setting up the email templates
-              in JSON as well.
+              During this project, the most important thing I’ve learnt was
+              problem management. We’ve had small and large scales of problems
+              that needed to be solved. Some problems were time sensitive that
+              needed to be fixed before a set amount of time. Learning to
+              quickly and effectively manage these problems was very important.
+              Also finding ways to monitor errors and knowing what to look for
+              when errors occur is also an invaluable experience.
+            </p>
+            <p>
+              As our project heavily relied on AWS’ various cloud services, I
+              got very familiar with quite a few of the services. I have also
+              learnt how to set up an HTML email template, which was a lot more
+              difficult and different than I thought it would be.
             </p>
             <a className="projLinks" href="https://www.textbeer.co.nz/">
               https://www.textbeer.co.nz/
