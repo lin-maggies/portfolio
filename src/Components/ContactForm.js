@@ -35,23 +35,25 @@ export default function ContactForm() {
       body,
     };
 
-    fetch(endpoint, requestOptions)
-      .then((response) => {
-        if (response.ok) {
-          setEmail("");
-          setName("");
-          setMessage("");
-          onOpen(true);
-          return response.json();
-        }
-        throw new Error("Something went wrong");
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    fetch(endpoint, requestOptions).then((response) => {
+      if (response.ok) {
+        setEmail("");
+        setName("");
+        setMessage("");
+        onOpen(true);
+        return response.json();
+      }
+      setEmail("");
+      setName("");
+      setMessage("");
+      // throw new Error("Something went wrong");
+    });
+    // .then((response) => {
+    //   console.log(response);
+    // })
+    // .catch((err) => {
+    //   console.log(err);
+    // });
   };
 
   return (
