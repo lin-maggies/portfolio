@@ -98,6 +98,7 @@ export default function MyProjects() {
           <ProjectModal
             images={textImageArray}
             title="Beer Jerk - TextBeer"
+            paddingX="0"
             children={
               <img
                 src={text1}
@@ -166,6 +167,7 @@ export default function MyProjects() {
           <ProjectModal
             images={brewImageArray}
             title="Brewenstein"
+            paddingX="0"
             children={
               <img
                 src={brew1}
@@ -251,6 +253,7 @@ export default function MyProjects() {
           <ProjectModal
             images={portImageArray}
             title="Portfolio"
+            paddingX="0"
             children={
               <img
                 src={port1}

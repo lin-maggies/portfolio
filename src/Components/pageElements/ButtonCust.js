@@ -1,13 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 
-export default function ButtonCust({
-  children,
-  onClick,
-  borderColor,
-  border,
-  type,
-}) {
+export default function ButtonCust(props) {
   return (
     <Button
       _focus={{ color: "none" }}
@@ -16,18 +10,19 @@ export default function ButtonCust({
         textShadow: "0 0 0.5px #1a27c9, 0.5px 0 0 #1a27c9;",
       }}
       _active={{ color: "none" }}
-      onClick={onClick}
+      onClick={props.onClick}
       fontWeight="light"
       bg="transparent"
       height="auto"
       color="#1a27c9"
       letterSpacing="0.1rem"
-      borderColor={borderColor ? borderColor : "none"}
-      border={border ? border : "none"}
+      borderColor={props.borderColor ? props.borderColor : "none"}
+      border={props.border ? props.border : "none"}
       marginTop="1rem"
-      type={type ? type : "none"}
+      paddingX={props.paddingX ? props.paddingX : "1rem"}
+      type={props.type ? props.type : "none"}
     >
-      {children}
+      {props.children}
     </Button>
   );
 }

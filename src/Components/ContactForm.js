@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import ButtonCust from "../Components/pageElements/ButtonCust.js";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Button,
+} from "@chakra-ui/react";
 
 export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
     const endpoint =
       "https://1gmprjswn1.execute-api.ap-southeast-2.amazonaws.com/default/sendContactEmail";
 
@@ -23,14 +35,25 @@ export default function ContactForm() {
       body,
     };
 
-    fetch(endpoint, requestOptions)
-      .then((response) => response.json())
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    fetch(endpoint, requestOptions).then((response) => {
+      if (response.ok) {
+        setEmail("");
+        setName("");
+        setMessage("");
+        onOpen(true);
+        return response.json();
+      }
+      setEmail("");
+      setName("");
+      setMessage("");
+      // throw new Error("Something went wrong");
+    });
+    // .then((response) => {
+    //   console.log(response);
+    // })
+    // .catch((err) => {
+    //   console.log(err);
+    // });
   };
 
   return (
@@ -72,6 +95,14 @@ export default function ContactForm() {
           />
         </div>
       </form>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader mr="auto" ml="auto">
+            Thank you for your message!
+          </ModalHeader>
+        </ModalContent>
+      </Modal>
     </div>
   );
 }

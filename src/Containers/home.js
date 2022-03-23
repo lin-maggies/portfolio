@@ -56,27 +56,21 @@ export default function Home() {
             My projects
           </Link>
           <div className="flexContainer">
-            <Link to="/projects">
-              <img
-                src={text1}
-                alt="Screenshot of TextBeer website"
-                className="photoProj"
-              />
-            </Link>
-            <Link to="/projects">
-              <img
-                src={brew1}
-                alt="Screenshot of Brewenstein website"
-                className="photoProj"
-              />
-            </Link>
-            <Link to="/projects">
-              <img
-                src={port1}
-                alt="Screenshot of portfolio website"
-                className="photoProj"
-              />
-            </Link>
+            <img
+              src={text1}
+              alt="Screenshot of TextBeer website"
+              className="photoProj"
+            />
+            <img
+              src={brew1}
+              alt="Screenshot of Brewenstein website"
+              className="photoProj"
+            />
+            <img
+              src={port1}
+              alt="Screenshot of portfolio website"
+              className="photoProj"
+            />
           </div>
 
           <div className="sectionPara">

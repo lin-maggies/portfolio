@@ -41,6 +41,7 @@ export default function ProjectModal(props) {
         children={props.children}
         border={props.border}
         borderColor={props.borderColor}
+        paddingX={props.paddingX}
       />
 
       <Modal isOpen={isOpen} onClose={onClose}>
