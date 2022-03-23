@@ -6,14 +6,17 @@ import brew5 from "./brew5.png";
 import brew6 from "./brew6.png";
 import brew7 from "./brew7.png";
 import brew8 from "./brew8.png";
+import brewMore from "./brewMore.png";
 import text1 from "./text1.png";
 import text2 from "./text2.png";
 import text3 from "./text3.png";
 import text4 from "./text4.png";
 import text5 from "./text5.png";
+import textMore from "./textMore.png";
 import port1 from "./port1.png";
 import port2 from "./port2.png";
 import port3 from "./port3.png";
+import portMore from "./portMore.png";
 import awsLogo from "./aws.svg";
 import cssLogo from "./css.svg";
 import gitLogo from "./git.svg";
@@ -34,14 +37,17 @@ export {
   brew6,
   brew7,
   brew8,
+  brewMore,
   text1,
   text2,
   text3,
   text4,
   text5,
+  textMore,
   port1,
   port2,
   port3,
+  portMore,
   awsLogo,
   cssLogo,
   gitLogo,

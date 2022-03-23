@@ -67,6 +67,12 @@ p {
   margin: 1rem 0 3rem;
 }
 
+.sectionContainer a:hover {
+  color: #1a27c9;
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
+}
+
 .sectionTitleProject {
   font-family: cartoon;
   font-size: 4rem;
@@ -218,12 +224,6 @@ p {
   padding: 0.5rem 0;
 }
 
-/* .buttonSpacing {
-  margin-left: 2rem;
-  margin-right: auto;
-  margin-top: 1rem;
-} */
-
 @media only screen and (min-width: 768px) {
   .navbarBurger {
     display: none;
@@ -322,6 +322,24 @@ p {
     border: 1px solid #1a27c9;
     border-radius: 5px;
     margin-bottom: 0;
+  }
+
+  .photoBox {
+    position: relative;
+    float: left;
+  }
+
+  .photoBox .photoProjMore {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+
+  .photoBox:hover .photoProjMore {
+    display: block;
+    border: 0.1rem solid #1a27c9;
+    border-radius: 0.25rem;
   }
 
   .modalPhoto {

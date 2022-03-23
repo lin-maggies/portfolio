@@ -43,7 +43,7 @@ export default function MyProjects() {
   return (
     <div>
       <Navbar />
-      <div className="sectionColorContainer row">
+      <div className="sectionColorContainer row" id="beerjerk">
         <h1 className="sectionTitleProject">Beer Jerk - TextBeer</h1>
         <p>Sep 2021 - Present</p>
         <p>Tools: React, Javascript, AWS, CSS, HTML, GitLab</p>
@@ -118,7 +118,7 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-      <div className="sectionContainer row">
+      <div className="sectionContainer row" id="brewenstein">
         <h1 className="sectionTitleProject">Brewenstein</h1>
         <p>Mar 2021 - Sep 2021</p>
         <p>Tools: React, Typescript, CSS, HTML, GitLab, Agile/SCRUM</p>
@@ -187,7 +187,7 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-      <div className="sectionColorContainer row">
+      <div className="sectionColorContainer row" id="portfolio">
         <h1 className="sectionTitleProject">Maggie's Portfolio</h1>
         <p>Mar 2022</p>
         <p>Tools: React, Javascript, AWS, CSS, HTML, GitHub</p>
