@@ -20,6 +20,7 @@ import {
   port1,
   port2,
   port3,
+  seeMore,
 } from "../assets/images";
 
 export default function MyProjects() {
@@ -43,7 +44,7 @@ export default function MyProjects() {
   return (
     <div>
       <Navbar />
-      <div className="sectionColorContainer row">
+      <div className="sectionColorContainer row" id="beerjerk">
         <h1 className="sectionTitleProject">Beer Jerk - TextBeer</h1>
         <p>Sep 2021 - Present</p>
         <p>Tools: React, Javascript, AWS, CSS, HTML, GitLab</p>
@@ -104,6 +105,8 @@ export default function MyProjects() {
                 src={text1}
                 alt="TextBeer website"
                 className="photoProjYellowBg"
+                onMouseOver={(e) => (e.currentTarget.src = seeMore)}
+                onMouseOut={(e) => (e.currentTarget.src = text1)}
               />
             }
           />
@@ -118,7 +121,7 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-      <div className="sectionContainer row">
+      <div className="sectionContainer row" id="brewenstein">
         <h1 className="sectionTitleProject">Brewenstein</h1>
         <p>Mar 2021 - Sep 2021</p>
         <p>Tools: React, Typescript, CSS, HTML, GitLab, Agile/SCRUM</p>
@@ -173,6 +176,8 @@ export default function MyProjects() {
                 src={brew1}
                 alt="Brewenstein website"
                 className="photoProj"
+                onMouseOver={(e) => (e.currentTarget.src = seeMore)}
+                onMouseOut={(e) => (e.currentTarget.src = brew1)}
               />
             }
           />
@@ -187,7 +192,7 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-      <div className="sectionColorContainer row">
+      <div className="sectionColorContainer row" id="portfolio">
         <h1 className="sectionTitleProject">Maggie's Portfolio</h1>
         <p>Mar 2022</p>
         <p>Tools: React, Javascript, AWS, CSS, HTML, GitHub</p>
@@ -259,6 +264,8 @@ export default function MyProjects() {
                 src={port1}
                 alt="Portfolio website"
                 className="photoProjYellowBg"
+                onMouseOver={(e) => (e.currentTarget.src = seeMore)}
+                onMouseOut={(e) => (e.currentTarget.src = port1)}
               />
             }
           />
