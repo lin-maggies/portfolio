@@ -98,6 +98,7 @@ export default function MyProjects() {
           <ProjectModal
             images={textImageArray}
             title="Beer Jerk - TextBeer"
+            paddingX="0"
             children={
               <img
                 src={text1}
