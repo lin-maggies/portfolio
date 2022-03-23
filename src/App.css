@@ -187,6 +187,10 @@ p {
   border-radius: 0.25rem;
 }
 
+.photoProjMore {
+  display: none;
+}
+
 .photoProjYellowBg {
   width: 40rem;
   border: 0.1rem solid #1a27c9;
