@@ -27,6 +27,7 @@ import selfie from "./selfie.jpg";
 import selfieSmall from "./selfieSmall.jpg";
 import headerLogo from "./headerLogo.svg";
 import headerLogoHover from "./headerLogoHover.svg";
+import seeMore from "./seeMore.png";
 
 export {
   brew1,
@@ -58,4 +59,5 @@ export {
   selfieSmall,
   headerLogo,
   headerLogoHover,
+  seeMore,
 };

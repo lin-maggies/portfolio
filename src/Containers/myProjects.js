@@ -20,6 +20,7 @@ import {
   port1,
   port2,
   port3,
+  seeMore,
 } from "../assets/images";
 
 export default function MyProjects() {
@@ -104,6 +105,8 @@ export default function MyProjects() {
                 src={text1}
                 alt="TextBeer website"
                 className="photoProjYellowBg"
+                onMouseOver={(e) => (e.currentTarget.src = seeMore)}
+                onMouseOut={(e) => (e.currentTarget.src = text1)}
               />
             }
           />
@@ -173,6 +176,8 @@ export default function MyProjects() {
                 src={brew1}
                 alt="Brewenstein website"
                 className="photoProj"
+                onMouseOver={(e) => (e.currentTarget.src = seeMore)}
+                onMouseOut={(e) => (e.currentTarget.src = brew1)}
               />
             }
           />
@@ -259,6 +264,8 @@ export default function MyProjects() {
                 src={port1}
                 alt="Portfolio website"
                 className="photoProjYellowBg"
+                onMouseOver={(e) => (e.currentTarget.src = seeMore)}
+                onMouseOut={(e) => (e.currentTarget.src = port1)}
               />
             }
           />
