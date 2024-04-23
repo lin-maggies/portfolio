@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import "../App.css";
-import Navbar from "../Components/Navbar";
-import teamPhotoBrew from "../assets/images/teamPhotoBrew.jpg";
-import photoClimb from "../assets/images/photoClimb.jpg";
+import React, { useEffect } from 'react';
+import '../App.css';
+import Navbar from '../Components/Navbar';
+import teamPhotoBrew from '../assets/images/teamPhotoBrew.jpg';
+import photoClimb from '../assets/images/photoClimb.jpg';
 
 export default function AboutMe() {
   useEffect(() => {
@@ -24,9 +24,9 @@ export default function AboutMe() {
               Brewenstein decided to fold their business in the end, I learnt a
               lot about what it’s like to work in a team, how time and money
               really matters in a company's operation, and how that could affect
-              decisions on project planning. {""}
+              decisions on project planning. {''}
               <span className="pMobile">Below </span>
-              {""}
+              {''}
               <span className="pDesk">On the right </span> is a photo of me with
               the rest of the Brewenstein team.
             </p>
@@ -67,18 +67,18 @@ export default function AboutMe() {
         <div className="column">
           <h1 className="sectionTitle">!Coding journey</h1>
           <div className="sectionPara">
-            {" "}
+            {' '}
             <p>
               My biggest passion right now is rock climbing. If I'm not sitting
               in front of a computer coding, there is 90% chance you'll be able
               to find me either at a climbing gym or at a crag somewhere.
             </p>
             <p>
-              {""}
+              {''}
               <span className="pMobile">Below </span>
-              {""}
+              {''}
               <span className="pDesk">On the right </span> is a photo of me
-              trying really hard to hug a rock wall.
+              trying really hard to stay on a rock wall.
             </p>
           </div>
         </div>
