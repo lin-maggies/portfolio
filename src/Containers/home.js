@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import "../App.css";
-import Navbar from "../Components/Navbar";
-import ContactForm from "../Components/ContactForm";
-import ButtonCust from "../Components/pageElements/ButtonCust.js";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import '../App.css';
+import Navbar from '../Components/Navbar';
+import ContactForm from '../Components/ContactForm';
+import ButtonCust from '../Components/pageElements/ButtonCust.js';
 import {
   text1,
   textMore,
@@ -19,7 +19,9 @@ import {
   reactLogo,
   selfie,
   selfieSmall,
-} from "../assets/images";
+  phpLogo,
+  sqlLogo,
+} from '../assets/images';
 
 export default function Home() {
   useEffect(() => {
@@ -37,11 +39,12 @@ export default function Home() {
             <div className="landingPara">
               <p>
                 I studied mechanical engineering in university, but have always
-                been very fond of programming. In 2020, I decided that it is
-                time to make changes to my life. 2020 is the time I started my
-                coding journey.
+                been very fond of programming. In 2020, I decided to make a
+                change in life and started my coding journey.
               </p>
               <div className="flexContainer">
+                <img src={phpLogo} alt="PHP logo" className="skillLogo" />
+                <img src={sqlLogo} alt="SQL logo" className="skillLogo" />
                 <img src={htmlLogo} alt="HTML logo" className="skillLogo" />
                 <img src={jsLogo} alt="Javascript logo" className="skillLogo" />
                 <img src={cssLogo} alt="CSS logo" className="skillLogo" />

@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import "../App.css";
-import Navbar from "../Components/Navbar";
-import ProjectModal from "../Components/ProjectModal";
+import React, { useEffect } from 'react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
+import '../App.css';
+import Navbar from '../Components/Navbar';
+import ProjectModal from '../Components/ProjectModal';
 import {
   brew1,
   brew2,
@@ -21,7 +21,7 @@ import {
   port2,
   port3,
   seeMore,
-} from "../assets/images";
+} from '../assets/images';
 
 export default function MyProjects() {
   const brewImageArray = [
@@ -44,9 +44,94 @@ export default function MyProjects() {
   return (
     <div>
       <Navbar />
-      <div className="sectionColorContainer row" id="beerjerk">
+      <div className="sectionColorContainer row" id="gxh">
+        <h1 className="sectionTitleProject">Green Cross Health</h1>
+        <p>April 2022 - March 2024</p>
+        <p>
+          Tools: PHP, MS SQL, MySQL, Microsoft AX2012, Microsoft D365 F&O,
+          PowerBI
+        </p>
+        <div className="sectionPara">
+          <h2>Project setup:</h2>
+          <p>
+            We have an ERP system we use for the finance department that is then
+            connected to different accounting systems, approval systems and our
+            own internal LAMP stack websites. Some of the systems are connected
+            via API, some are connected directly to the SQL database. All these
+            work together to provide financial reports and reconciliation
+            reports.
+          </p>
+          <h2>My contribution:</h2>
+          <ul className="bullet">
+            <li>
+              Supported ERP system migration from Microsoft AX2012 to D365 F&O,
+              which involves database migration and rebuilding integration with
+              other existing systems
+            </li>
+            <li>LAMP stack website maintenance and feature adding</li>
+            <li>
+              Supported third party API integration with internal LAMP stack
+              website for financial reports and reconciliations
+            </li>
+            <li>
+              SQL database maintenance, query writing for report and feature
+              requests
+            </li>
+            <li>PowerBI report building/maintaining with MS SQL data source</li>
+            <li>
+              System configuration and maintenance for third party accounting
+              and ERP system
+            </li>
+          </ul>
+          <h2>My learning:</h2>
+          <p>
+            During my 2 years at Green Cross Health, I have learnt and developed
+            a lot of different skills. For soft skills, predominantly people
+            skills, time management skills, and the ability to adapt and learn
+            things that I’ve never learnt before.
+          </p>
+          <p>
+            As our team constantly interacts with a lot of different
+            departments, people skills were a very important part of my role.
+            Being able to communicate with other developers, accountants or even
+            pharmacists at the pharmacies was something I did on a daily basis.
+          </p>
+          <p>
+            While we were working on the ERP system migration and rebuilding all
+            the integration between the new ERP system and all our other
+            existing systems, suddenly the ability to time management well was
+            extra valuable. As there was so much to do everyday, it was really
+            important to be able to try my best at focusing on priorities for
+            the project and still fit in all the everyday tasks.
+          </p>
+          <p>
+            There were quite a few different things that I also needed to learn
+            from the ground up. Our team supported almost all the finance
+            systems the finance department used. In order to communicate with
+            the accountants or support officers successfully to fix issues or
+            add new features for them, it was important I had a basic
+            understanding of how finance works.
+          </p>
+          <p>
+            In terms of hard skills, I have learnt a lot of new things and also
+            improved on my coding skills during the 2 years. I was improving a
+            lot mostly with PHP and SQL. I also picked up how to create reports
+            using PowerBI and was able to maintain and troubleshoot problems for
+            the finance team using AX2012 and D365.
+          </p>
+          <p>
+            Our internal websites that the finance team uses for reports and
+            some data control are LAMP stack. I was in charge of a lot of the
+            feature adding and maintenance of the websites and creating new
+            reports for the team. A lot of the time we had to connect to third
+            party API’s to retrieve data or convert third party XML files to
+            then present to the finance team for reconciliation purposes.{' '}
+          </p>
+        </div>
+      </div>
+      <div className="sectionContainer row" id="beerjerk">
         <h1 className="sectionTitleProject">Beer Jerk - TextBeer</h1>
-        <p>Sep 2021 - Present</p>
+        <p>Sep 2021 - May 2022</p>
         <p>Tools: React, Javascript, AWS, CSS, HTML, GitLab</p>
         <div className="column">
           <div className="sectionPara">
@@ -104,7 +189,7 @@ export default function MyProjects() {
               <img
                 src={text1}
                 alt="TextBeer website"
-                className="photoProjYellowBg"
+                className="photoProj"
                 onMouseOver={(e) => (e.currentTarget.src = seeMore)}
                 onMouseOut={(e) => (e.currentTarget.src = text1)}
               />
@@ -121,7 +206,7 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-      <div className="sectionContainer row" id="brewenstein">
+      <div className="sectionColorContainer row" id="brewenstein">
         <h1 className="sectionTitleProject">Brewenstein</h1>
         <p>Mar 2021 - Sep 2021</p>
         <p>Tools: React, Typescript, CSS, HTML, GitLab, Agile/SCRUM</p>
@@ -175,7 +260,7 @@ export default function MyProjects() {
               <img
                 src={brew1}
                 alt="Brewenstein website"
-                className="photoProj"
+                className="photoProjYellowBg"
                 onMouseOver={(e) => (e.currentTarget.src = seeMore)}
                 onMouseOut={(e) => (e.currentTarget.src = brew1)}
               />
@@ -192,7 +277,7 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-      <div className="sectionColorContainer row" id="portfolio">
+      <div className="sectionContainer row" id="portfolio">
         <h1 className="sectionTitleProject">Maggie's Portfolio</h1>
         <p>Mar 2022</p>
         <p>Tools: React, Javascript, AWS, CSS, HTML, GitHub</p>
@@ -263,7 +348,7 @@ export default function MyProjects() {
               <img
                 src={port1}
                 alt="Portfolio website"
-                className="photoProjYellowBg"
+                className="photoProj"
                 onMouseOver={(e) => (e.currentTarget.src = seeMore)}
                 onMouseOut={(e) => (e.currentTarget.src = port1)}
               />
@@ -280,7 +365,7 @@ export default function MyProjects() {
           </div>
         </div>
       </div>
-      <div className="sectionContainer">
+      <div className="sectionColorContainer">
         <h1 className="sectionTitleProject">This Local Piggy</h1>
         <p>Feb 2022 - Mar 2022</p>
         <p>Tools: React, Typescript, GitHub</p>

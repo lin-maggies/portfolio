@@ -36,7 +36,7 @@ export default function AboutMe() {
               project had a low fidelity design process, so it has been
               interesting to be a very big part of deciding what the end product
               looks like. Also getting the full experience of what it's like to
-              have a product that is launched and having real users.
+              have a product that has launched and having real users.
             </p>
             <p>
               While working for Beer Jerk, I've met some other amazing people,
@@ -48,10 +48,20 @@ export default function AboutMe() {
               strategies, etc.
             </p>
             <p>
-              And in January 2022, I decided to quit my actual full time job
-              that’s in the logistic industry, and to fully devote my time and
-              energy in web development. As I can really see myself growing this
-              career, and really enjoying the coding journey.
+              In January 2022, I decided to quit my full time job in the
+              logistic industry to fully devote my time and energy in web
+              development. This led to me working at Green Cross Health for the
+              following two years. During this time, I have learnt a lot of
+              things, both soft and hard skills. Out of all things I learnt, the
+              most valuable thing I learnt was time management, this was
+              particularly crucial as I participated in the biggest tech project
+              the company has ever had.
+            </p>
+            <p>
+              Now in 2024, I’m once again on my way to embark on a new journey
+              where I will be doing an overseas experience in the UK. This is to
+              hope to always keep learning new things and the opportunity to
+              gain new experiences.
             </p>
           </div>
         </div>
@@ -69,9 +79,9 @@ export default function AboutMe() {
           <div className="sectionPara">
             {' '}
             <p>
-              My biggest passion right now is rock climbing. If I'm not sitting
-              in front of a computer coding, there is 90% chance you'll be able
-              to find me either at a climbing gym or at a crag somewhere.
+              My biggest passion right now is rock climbing. In my spare time,
+              there is a 90% chance you'll be able to find me either at a
+              climbing gym or at a crag somewhere.
             </p>
             <p>
               {''}
