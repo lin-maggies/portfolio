@@ -25,8 +25,8 @@ export default function MySkills() {
           <div className="sectionPara">
             <p>
               My main expertise now is PHP and SQL. Mainly to use SQL to query
-              the database, then to use PHP to present the results on our LAMP
-              website for users.
+              the database, then to use PHP to present the query results on our
+              LAMP website for users.
             </p>
             <p>
               I am also familiar with using React, Javascript, HTML and CSS to
